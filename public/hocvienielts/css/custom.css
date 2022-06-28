@@ -1,0 +1,73 @@
+.bg-primary
+{
+    background-color: #387539 !important;
+}
+.text-primary
+{
+    color: #387539 !important;
+}
+.section-title
+{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #387539;
+}
+p
+{
+    font-size: 16px;
+}
+.swiper-slide img 
+{
+    max-width: 100vw;
+}
+.bg-section-2
+{
+    background-color: #F3F3F3;
+}
+.box-info .number
+{
+    font-size: 60px;
+    margin: 0px;
+}
+.box-info{
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 23px rgb(0 0 0 / 16%);
+    transition: all .2s;
+}
+.box-info:hover 
+{
+    background-color: #387539;
+    color: #fff !important;
+}
+.box-info:hover .number
+{
+    color: #fff !important;
+}
+.testimonial
+{
+
+    background-size:cover;
+}
+section.team .member-image
+{
+    border-bottom: 5px solid #387539;
+}
+section.course .course-item
+{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-top: 4px solid #387539;
+    transition: all .2s;
+}
+section.course .course-item:hover, section.course .course-item.active
+{
+    background-color: #387539 !important;
+    border-color: #1F4320;
+    color: #fff !important;
+}
+section.course .course-item:hover h6,  section.course .course-item.active h6
+{
+    color: #fff !important;
+}
