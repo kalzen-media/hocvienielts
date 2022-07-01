@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="{{asset('hocvienielts/vendors/css/magnific-popup.css')}}">
     <link rel="stylesheet" href="{{asset('hocvienielts/vendors/css/swiper-bundle.css')}}">
     <link rel="stylesheet" href="{{asset('hocvienielts/css/main.css')}}">
+    <link rel="stylesheet" href="{{asset('hocvienielts/css/responsive.css')}}">
     <link rel="stylesheet" href="{{asset('hocvienielts/css/custom.css')}}">
     <!-- endbuild -->
     <!-- jQuery-->

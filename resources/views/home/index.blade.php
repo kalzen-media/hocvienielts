@@ -1,31 +1,31 @@
 @extends('layouts.master')
 @section('content')
 <section class="slider-home position-relative">
-<div class="swiper" data-swiper-slides="1" data-swiper-speed="1000" data-swiper-parallax="true">
-    <div class="swiper-pagination text-white position-absolute mb-30 start-0 w-100 d-none d-lg-block"></div>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide h-auto">
-                <img loading="lazy" src="{{asset('hocvienielts/banner-web-1.png')}}" data-swiper-parallax-x="20%"
-                    alt="">
+    <div class="swiper" data-swiper-slides="1" data-swiper-speed="1000" data-swiper-parallax="true">
+        <div class="swiper-pagination text-white position-absolute mb-30 start-0 w-100 d-none d-lg-block"></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide h-auto">
+                    <img loading="lazy" src="{{asset('hocvienielts/banner-web-1.png')}}" data-swiper-parallax-x="20%"
+                        alt="">
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
-</div>
-<div class="swiper-button-prev swiper-button-position-3 swiper-button-opacity shadow"><svg
-        xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
-        <path fill="currentColor" fill-rule="evenodd"
-            d="m3.96 6.15 5.08-4.515L7.91.365.445 7l7.465 6.635 1.13-1.27L3.96 7.85h15.765v-1.7H3.96Z"
-            clip-rule="evenodd" />
-    </svg></div>
-<div class="swiper-button-next swiper-button-position-3 swiper-button-opacity shadow"><svg
-        xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
-        <path fill="currentColor" fill-rule="evenodd"
-            d="m16.21 6.15-5.08-4.515 1.13-1.27L19.725 7l-7.465 6.635-1.13-1.27 5.08-4.515H.445v-1.7H16.21Z"
-            clip-rule="evenodd" />
-    </svg></div>
-</div>
+    <div class="swiper-button-prev swiper-button-position-3 swiper-button-opacity shadow"><svg
+            xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
+            <path fill="currentColor" fill-rule="evenodd"
+                d="m3.96 6.15 5.08-4.515L7.91.365.445 7l7.465 6.635 1.13-1.27L3.96 7.85h15.765v-1.7H3.96Z"
+                clip-rule="evenodd" />
+        </svg></div>
+    <div class="swiper-button-next swiper-button-position-3 swiper-button-opacity shadow"><svg
+            xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
+            <path fill="currentColor" fill-rule="evenodd"
+                d="m16.21 6.15-5.08-4.515 1.13-1.27L19.725 7l-7.465 6.635-1.13-1.27 5.08-4.515H.445v-1.7H16.21Z"
+                clip-rule="evenodd" />
+        </svg></div>
+    </div>
 </section>
 <section class="about py-60">
     <div class="container">
@@ -177,18 +177,76 @@
                 </div>
                 <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20">
                     <h6 class="text-primary">FORWARD IELTS</h6>
-                    <div class="font-size-15">– Khoá học tập trung hoàn thiện 4 kỹ năng Nghe – Nói – Đọc – Viết tiếng Anh học thuật ở cấp độ Sơ cấp – Trung cấp </div>
+                    <div class="font-size-15">– Khoá học tập trung hoàn thiện 4 kỹ năng Nghe – Nói – Đọc – Viết tiếng
+                        Anh học thuật ở cấp độ Sơ cấp – Trung cấp </div>
                 </div>
                 <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20">
                     <h6 class="text-primary">IELTS ADVANCED</h6>
-                    <div class="font-size-15">Khoá học chuyên sâu 4 kỹ năng ở mức Cao cấp giúp học viên đạt mục tiêu Overall 7.0+ </div>
+                    <div class="font-size-15">Khoá học chuyên sâu 4 kỹ năng ở mức Cao cấp giúp học viên đạt mục tiêu
+                        Overall 7.0+ </div>
                 </div>
                 <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20">
                     <h6 class="text-primary">IELTS COACHING</h6>
-                    <div class="font-size-15">Khoá học với mô hình 1-1, 1-2, 1-3 giúp học viên bổ sung cấp tốc trong thời gian ngắn</div>
+                    <div class="font-size-15">Khoá học với mô hình 1-1, 1-2, 1-3 giúp học viên bổ sung cấp tốc trong
+                        thời gian ngắn</div>
                 </div>
             </div>
         </div>
+    </div>
+</section>
+<section class="section-contact">
+    <div class="container">
+        <form class="bg-primary-dark form-contact form-reg" action="{{ route('contact') }}" method="post">
+            <div class="row align-items-center gy-3">
+                <div class="col-lg-3">
+                    <h3 class="fs-2 mb-0 text-white">Đăng ký
+                        <br class="d-none d-lg-inline"> nhận tư vấn
+                    </h3>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row g-20">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                            <label class="form-label visually-hidden" for="form-reg-name">Họ và tên</label>
+                            <input class="form-control" id="form-reg-name" name="full_name" type="text"
+                                placeholder="Họ và tên">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                            <label class="form-label visually-hidden" for="form-reg-phonenumber">Số điện thoại</label>
+                            <input class="form-control" id="form-reg-phonenumber" name="phone" type="text"
+                                placeholder="Số điện thoại">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                        <div class="form-group">
+                            <label class="form-label visually-hidden" for="form-reg-Email">Email</label>
+                            <input class="form-control" id="form-reg-Email" name="email" type="email"
+                                placeholder="Email">
+</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label visually-hidden" for="form-reg-work">Band điểm</label>
+                            <select class="form-select form-select-default" id="form-reg-work" name="job">
+                                <option selected="selected">Band điểm?</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label visually-hidden" for="form-reg-address">Mục tiêu</label>
+                            <select class="form-select form-select-default" id="form-reg-address" name="branch_id">
+                                <option selected="selected" value="0">Mục tiêu của bạn là?</option>
+                              
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary text-uppercase shadow-sm w-100" type="submit">Nhận tư
+                                vấn</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 </section>
 @endsection

@@ -2,9 +2,25 @@
 {
     background-color: #387539 !important;
 }
+.bg-primary-dark
+{
+    background-color: #1F4320 !important;
+}
 .text-primary
 {
     color: #387539 !important;
+}
+.btn-primary
+{
+    background: #387539;
+    text-align: center;
+    display: block;
+    color: #fff;
+}
+.btn-primary:hover
+{
+    background: #2b5e2c;
+    border-color: #1b3d1b;
 }
 .section-title
 {
@@ -15,6 +31,9 @@
 p
 {
     font-size: 16px;
+}
+a{
+    text-decoration: none;
 }
 .swiper-slide img 
 {
@@ -70,4 +89,47 @@ section.course .course-item:hover, section.course .course-item.active
 section.course .course-item:hover h6,  section.course .course-item.active h6
 {
     color: #fff !important;
+}
+.form-control, .form-select
+{
+    width: 100%;
+    border-radius: 10px;
+    padding: 0.4375rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 0.375rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+ }
+ .form-reg .form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+}
+
+ .form-select option
+ {
+    background: transparent;
+ }
+.form-reg .form-control:focus, .form-reg .form-select:focus
+{
+    border-color: #fff;
+}
+.form-contact
+{
+    border-radius: 20px;
+}
+.form-contact .form-control, .form-contact .form-select, .form-contact .form-control::placeholder
+{
+    color: #fff;
+}
+.body-page
+{
+    padding: 20px 0px;
+}
+.card-body
+{
+    padding: 10px;
 }

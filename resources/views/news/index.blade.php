@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 @section('meta')
 <title>{{ ($category->name??'Tin tức') . ' - '. env('APP_NAME')}}</title>
 @endsection

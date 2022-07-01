@@ -1,131 +1,184 @@
-@extends('layouts.app')
+@extends('layouts.master')
 @section('meta')
-    @if(isset($category))
-    <title>{{$category->name}} - {{env('APP_NAME')}}</title>
-    <meta name="keywords" content="{{$category->tags->pluck('name')->join(', ')}}"/>
-    <meta name="description" content="{{$category->description}}"/>
-    <meta property="og:image" content="{{$category->image?$category->image->url:''}}">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="{{$category->name}}">
-    <meta property="og:description" content="{{$category->description}}">
-    @else
-    <title>Tin tức - {{env('APP_NAME')}}</title>
-    <meta name="keywords" content="{{env('APP_NAME')}}"/>
-    <meta name="description" content="{{env('APP_NAME')}}"/>
-    <meta property="og:image" content="{{env('APP_LOGO')}}">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="{{env('APP_NAME')}}">
-    <meta property="og:description" content="{{env('APP_NAME')}}">
-    @endif
+@if(isset($category))
+<title>{{$category->name}} - {{env('APP_NAME')}}</title>
+<meta name="keywords" content="{{$category->tags->pluck('name')->join(', ')}}" />
+<meta name="description" content="{{$category->description}}" />
+<meta property="og:image" content="{{$category->image?$category->image->url:''}}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{$category->name}}">
+<meta property="og:description" content="{{$category->description}}">
+@else
+<title>Tin tức - {{env('APP_NAME')}}</title>
+<meta name="keywords" content="{{env('APP_NAME')}}" />
+<meta name="description" content="{{env('APP_NAME')}}" />
+<meta property="og:image" content="{{env('APP_LOGO')}}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{env('APP_NAME')}}">
+<meta property="og:description" content="{{env('APP_NAME')}}">
+@endif
 @stop
 @section('content')
-
-    <!-- Main Content - start -->
-    <main>
-        <!-- Breadcrumbs -->
-        <div class="b-crumbs-wrap">
-            <div class="cont b-crumbs">
-                <ul>
-                    <li>
-                        <a href="/">Trang chủ</a>
-                    </li>
-                    <li>
-                        @if(isset($category))
-                        <span>{{$category->name}}</span>
-                        @else
-                        <span>Tin tức</span>
-                        @endif
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="cont maincont">
-            <h1>
-                @if(isset($category))
-                <span>{{$category->name}}</span>
-                @else
-                <span>Tin tức</span>
-                @endif
-            </h1>
-            <span class="maincont-line1 maincont-line12"></span>
-            <span class="maincont-line2 maincont-line22 blog-line"></span>
-            <!-- Blog Sections -->
-            <ul class="cont-sections">
-                <li class="active">
-                    <a href="{{route('post.list')}}">Tất cả</a>
-                </li>
-                @foreach($categories as $category)
-                <li>
-                    <a href="{{$category->url}}">{{$category->name}}</a>
-                </li>
-                @endforeach
-            </ul>
-            <div class="blog">
-                <!-- Blog Posts List - start -->
-                <div class="blog-cont">
-                    <div id="blog-grid">
-                        @foreach($posts as $post)
-                        <div class="blog-grid-i">
-                            <div class="blog-i">
-                                <a href="{{$post->url}}" class="blog-img">
-                                    <img src="{{$post->images()->first()->url??''}}" alt="{{$post->title}}">
-                                </a>
-                                <p class="blog-info">
-                                    <a href="{{$post->categories()->first()->url??''}}">{{$post->categories()->first()->name??''}}</a>
-                                    <time datetime="{{$post->created_at}}">{{date('d.m.Y',strtotime($post->created_at))}}</time>
-                                </p>
-                                <h3>
-                                    <a href="{{$post->url}}">{{$post->name}}</a>
-                                </h3>
-                                <p>
-                                    {{substr(strip_tags($post->description),0,100)}} <a href="{{$post->url}}">Xem thêm</a>
-                                </p>
+<div class="body-page">
+    <div class="container">
+        <div class="row">
+            <!-- breadcums -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav>
+            <div class="col-lg-8">
+                <article class="card card-post-2">
+                    <a class="thumbnail  hover-overlay mb-3" href="#">
+                        <img class="thumbnail-img" loading="lazy"
+                            src="{{ asset('hocvienielts/img/blog/single-post-video-1920x900.jpg')}}"
+                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+                    </a>
+                    <div class="card-body p-0">
+                        <h5 class="card-title mt-10">
+                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                        </h5>
+                        <p class="card-text text-muted">Curabitur semper interdum velit cursus tristique. Nulla feugiat
+                            venenatis nisl, et feugiat erat aliquam nec. Phasellus convallis sapien sit amet nisi varius
+                            mattis. Fusce</p>
+                        <div class="d-flex justify-content-between text-muted">
+                            <p>2022-06-02 15:30:24</p>
+                            <p>181 lượt xem</p>
+                        </div>
+                    </div>
+                </article>
+                <hr>
+                <div class="list-post">
+                    <article class="card card-post">
+                        <div class="row g-3 gx-md-4">
+                            <div class="col-sm-5">
+                            <a class="thumbnail  hover-overlay mb-3" href="#">
+                        <img class="thumbnail-img" loading="lazy"
+                            src="{{ asset('hocvienielts/img/about-us-3-900x630.jpg')}}"
+                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+                    </a>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <a
+                                            href="{{ asset('hocvienielts/img/about-us-3-900x630.jpg')}}">Chuỗi
+                                            workshop Intensive IELTS - đồng hành chinh phục IELTS 4 kỹ năng</a>
+                                    </h5>
+                                    <p class="card-text text-muted mb-2">Từ tháng 2 đến tháng 5, IELTS Fighter tổ chức
+                                        chuỗi Intensive IELTS cùng chia sẻ cách học và thực hành cách học nâng cao, phát
+                                        triển toàn diện các kỹ năng bên cạnh chuỗi dự án học tập chuyên sâu hàng tháng.
+                                    </p>
+                                    <a class="card-read-more text-muted mt-auto fs-sm"
+                                        href="#">Xem
+                                        chi tiết</td>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        @endforeach
-                    </div>
-                    <!-- Pagination -->
-                    <div>
-                        {{$posts->appends(request()->only(['keyword']))->links()}}
-                    </div>
-                </div>
-                <!-- Blog Posts List - end -->
-                <!-- Blog Sidebar - start -->
-                <div class="blog-sb">
-                    <div class="blog-search">
-                        <h4>Tìm kiếm</h4>
-                        <form action="{{route('post.search')}}">
-                            <input name="keyword" value="{{request('keyword')}}" type="text" placeholder="Từ khóa..">
-                            <button type="submit">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </form>
-                    </div>
-                    <div class="blog-featured-wrap">
-                        <h4>Tin nổi bật</h4>
-                        @foreach($featured_posts as $post)
-                        <div class="blog-featured">
-                            <p class="blog-featured-info">
-                                <a href="{{$post->categories->first()->url??''}}">{{$post->categories->first()->name??''}}</a>
-                                <time datetime="{{$post->created_at}}">{{date('d.m.Y',strtotime($post->created_at))}}</time>
-                            </p>
-                            <h5>
-                                <a href="{{$post->url}}">{{$post->title}}</a>
-                            </h5>
+                    </article>
+                    <hr>
+                    <article class="card card-post">
+                        <div class="row g-3 gx-md-4">
+                            <div class="col-sm-5">
+                            <a class="thumbnail  hover-overlay mb-3" href="#">
+                        <img class="thumbnail-img" loading="lazy"
+                            src="{{ asset('hocvienielts/img/about-us-3-900x630.jpg')}}"
+                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+                    </a>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <a
+                                            href="{{ asset('hocvienielts/img/about-us-3-900x630.jpg')}}">Chuỗi
+                                            workshop Intensive IELTS - đồng hành chinh phục IELTS 4 kỹ năng</a>
+                                    </h5>
+                                    <p class="card-text text-muted mb-2">Từ tháng 2 đến tháng 5, IELTS Fighter tổ chức
+                                        chuỗi Intensive IELTS cùng chia sẻ cách học và thực hành cách học nâng cao, phát
+                                        triển toàn diện các kỹ năng bên cạnh chuỗi dự án học tập chuyên sâu hàng tháng.
+                                    </p>
+                                    <a class="card-read-more text-muted mt-auto fs-sm"
+                                        href="#">Xem
+                                        chi tiết</td>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        @endforeach
-                    </div>
+                    </article>
+                    <hr>
+                    <article class="card card-post">
+                        <div class="row g-3 gx-md-4">
+                            <div class="col-sm-5">
+                            <a class="thumbnail  hover-overlay mb-3" href="#">
+                        <img class="thumbnail-img" loading="lazy"
+                            src="{{ asset('hocvienielts/img/about-us-3-900x630.jpg')}}"
+                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+                    </a>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <a
+                                            href="{{ asset('hocvienielts/img/about-us-3-900x630.jpg')}}">Chuỗi
+                                            workshop Intensive IELTS - đồng hành chinh phục IELTS 4 kỹ năng</a>
+                                    </h5>
+                                    <p class="card-text text-muted mb-2">Từ tháng 2 đến tháng 5, IELTS Fighter tổ chức
+                                        chuỗi Intensive IELTS cùng chia sẻ cách học và thực hành cách học nâng cao, phát
+                                        triển toàn diện các kỹ năng bên cạnh chuỗi dự án học tập chuyên sâu hàng tháng.
+                                    </p>
+                                    <a class="card-read-more text-muted mt-auto fs-sm"
+                                        href="#">Xem
+                                        chi tiết</td>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <hr>
+                    <article class="card card-post">
+                        <div class="row g-3 gx-md-4">
+                            <div class="col-sm-5">
+                            <a class="thumbnail  hover-overlay mb-3" href="#">
+                        <img class="thumbnail-img" loading="lazy"
+                            src="{{ asset('hocvienielts/img/about-us-3-900x630.jpg')}}"
+                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+                    </a>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <a
+                                            href="{{ asset('hocvienielts/img/about-us-3-900x630.jpg')}}">Chuỗi
+                                            workshop Intensive IELTS - đồng hành chinh phục IELTS 4 kỹ năng</a>
+                                    </h5>
+                                    <p class="card-text text-muted mb-2">Từ tháng 2 đến tháng 5, IELTS Fighter tổ chức
+                                        chuỗi Intensive IELTS cùng chia sẻ cách học và thực hành cách học nâng cao, phát
+                                        triển toàn diện các kỹ năng bên cạnh chuỗi dự án học tập chuyên sâu hàng tháng.
+                                    </p>
+                                    <a class="card-read-more text-muted mt-auto fs-sm"
+                                        href="#">Xem
+                                        chi tiết</td>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <hr>
                 </div>
-                <!-- Blog Sidebar - end -->
             </div>
+            <div class="col-lg-4"></div>
         </div>
-    </main>
-    <!-- Main Content - end -->
+    </div>
+</div>
 @endsection
 @section('scripts')
 <script>
-    $(function(){
-        console.log('Post index ready')
-    })
+$(function() {
+    console.log('Post index ready')
+})
 </script>
 @endsection

@@ -30,7 +30,7 @@
                 </li>
                 <li class="nav-item navbar-dropdown"><a class="nav-link" href="#"><span>Tin tức</span></a>
                 </li>
-                <li class="nav-item navbar-dropdown"><a class="nav-link" href="#"><span>Liên hệ</span></a>
+                <li class="nav-item navbar-dropdown"><a class="nav-link" href="{{ route('contact')}}"><span>Liên hệ</span></a>
                 </li>
             </ul>
         </div>
@@ -74,7 +74,7 @@
                     </li>
                     <li class="nav-item navbar-collapse"><a class="nav-link" href="#navbarCollapseContact" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbarCollapseContact"><span>Tin tức</span></a>
                     </li>
-                    <li class="nav-item navbar-collapse"><a class="nav-link"><span>Liên hệ</span></a>
+                    <li class="nav-item navbar-collapse"><a href="{{ route('contact')}}" class="nav-link"><span>Liên hệ</span></a>
                     </li>
                 </ul>
             </div>
