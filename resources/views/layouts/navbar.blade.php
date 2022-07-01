@@ -28,7 +28,7 @@
                 </li>
                 <li class="nav-item navbar-dropdown"><a class="nav-link" href="#"><span>Tài liệu</span></a>
                 </li>
-                <li class="nav-item navbar-dropdown"><a class="nav-link" href="#"><span>Tin tức</span></a>
+                <li class="nav-item navbar-dropdown"><a class="nav-link" href="{{ route('post.list')}}"><span>Tin tức</span></a>
                 </li>
                 <li class="nav-item navbar-dropdown"><a class="nav-link" href="{{ route('contact')}}"><span>Liên hệ</span></a>
                 </li>

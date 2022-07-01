@@ -133,3 +133,14 @@ section.course .course-item:hover h6,  section.course .course-item.active h6
 {
     padding: 10px;
 }
+.swiper-button-primary
+{
+    color: #fff;
+    background-color: #387539;
+}
+.btn-outline
+{
+    border-color: #fff;
+    background: transparent;
+    color: #fff;
+}

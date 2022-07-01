@@ -25,9 +25,9 @@
             <!-- breadcums -->
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Library</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                    <li class="breadcrumb-item"><a href="#">Tin tức</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Danh mục tin tức</li>
                 </ol>
             </nav>
             <div class="col-lg-8">
@@ -170,7 +170,11 @@
                     <hr>
                 </div>
             </div>
-            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <div class="ads">
+                    <a href="#"><img src="https://st.ielts-fighter.com/resize/ielts-fighter-image/500x500/2022/03/09/a7b6a98d-4619-4a31-b545-f27b390d6301.jpg" alt="quảng cáo"></a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

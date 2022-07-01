@@ -1,30 +1,36 @@
 @extends('layouts.master')
 @section('content')
 <section class="slider-home position-relative">
-    <div class="swiper" data-swiper-slides="1" data-swiper-speed="1000" data-swiper-parallax="true">
+    <div class="swiper" data-swiper-slides="1" data-swiper-speed="1000">
         <div class="swiper-pagination text-white position-absolute mb-30 start-0 w-100 d-none d-lg-block"></div>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide h-auto">
-                    <img loading="lazy" src="{{asset('hocvienielts/banner-web-1.png')}}" data-swiper-parallax-x="20%"
-                        alt="">
+                    <a href="#">
+                        <img loading="lazy" src="{{asset('hocvienielts/banner-web-1.png')}}"
+                            data-swiper-parallax-x="20%" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide h-auto">
+                    <a href="#">
+                        <img loading="lazy" src="{{asset('hocvienielts/banner-web-1.png')}}"
+                            data-swiper-parallax-x="20%" alt="">
+                    </a>
                 </div>
             </div>
-
         </div>
-    </div>
-    <div class="swiper-button-prev swiper-button-position-3 swiper-button-opacity shadow"><svg
-            xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
-            <path fill="currentColor" fill-rule="evenodd"
-                d="m3.96 6.15 5.08-4.515L7.91.365.445 7l7.465 6.635 1.13-1.27L3.96 7.85h15.765v-1.7H3.96Z"
-                clip-rule="evenodd" />
-        </svg></div>
-    <div class="swiper-button-next swiper-button-position-3 swiper-button-opacity shadow"><svg
-            xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
-            <path fill="currentColor" fill-rule="evenodd"
-                d="m16.21 6.15-5.08-4.515 1.13-1.27L19.725 7l-7.465 6.635-1.13-1.27 5.08-4.515H.445v-1.7H16.21Z"
-                clip-rule="evenodd" />
-        </svg></div>
+        <div class="swiper-button-prev swiper-button-position-3 swiper-button-opacity shadow"><svg
+                xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
+                <path fill="currentColor" fill-rule="evenodd"
+                    d="m3.96 6.15 5.08-4.515L7.91.365.445 7l7.465 6.635 1.13-1.27L3.96 7.85h15.765v-1.7H3.96Z"
+                    clip-rule="evenodd" />
+            </svg></div>
+        <div class="swiper-button-next swiper-button-position-3 swiper-button-opacity shadow"><svg
+                xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
+                <path fill="currentColor" fill-rule="evenodd"
+                    d="m16.21 6.15-5.08-4.515 1.13-1.27L19.725 7l-7.465 6.635-1.13-1.27 5.08-4.515H.445v-1.7H16.21Z"
+                    clip-rule="evenodd" />
+            </svg></div>
     </div>
 </section>
 <section class="about py-60">
@@ -86,19 +92,74 @@
         <div class="row">
             <div class="bg-white rounded-4 py-60 px-70 animated" data-show="startbox" data-show-delay="200"
                 style="transform: translateY(0px); transition-duration: 500ms; opacity: 1;">
-                <div class="d-flex align-items-center">
-                    <div class="flex-shrink-0 d-none d-xl-block me-40"><img class="rounded-circle" loading="lazy"
-                            src="{{asset('hocvienielts/testimonial-example.png')}}" alt="" height="250" width="250">
+                <div class="swiper" data-swiper-slides="1">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 d-none d-xl-block me-40"><img class="rounded-circle"
+                                            loading="lazy" src="{{asset('hocvienielts/testimonial-example.png')}}"
+                                            alt="" height="250" width="250">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="fw-bold text-primary font-size-18">BẢO HƯNG – IELTS OVERALL 8.0
+                                        </div>
+                                        <div class="font-size-15 text-dark">Trường THPT chuyên Trần Phú</div>
+                                        <div class="font-size-15 text-dark mt-40">“Mình có pha quay xe ngoạn mục để nâng
+                                            tầm đạt 8.0
+                                            Overall và bất ngờ đạt 7.5 Writing, tất cả là nhờ học Tư duy 4 chiều và Giá
+                                            trị văn học
+                                            trong triển khai bài viết của thầy Vũ. Ban đầu, những kiến thức ấy thực sự
+                                            mình cũng không
+                                            tin tưởng sẽ giúp ích được gì vì chưa nghe đến bao giờ nhưng thật không ngờ
+                                            đó là một kho
+                                            báu có giá trị lớn đến vậy. Mình đoán chắc chỉ có thầy Vũ mới nghĩ ra được
+                                            phương pháp học
+                                            IELTS dựa trên kiến thức của ngành Khoa học máy tính độc đáo đến như vậy”.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 d-none d-xl-block me-40"><img class="rounded-circle"
+                                            loading="lazy" src="{{asset('hocvienielts/testimonial-example.png')}}"
+                                            alt="" height="250" width="250">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="fw-bold text-primary font-size-18">BẢO HƯNG – IELTS OVERALL 8.0
+                                        </div>
+                                        <div class="font-size-15 text-dark">Trường THPT chuyên Trần Phú</div>
+                                        <div class="font-size-15 text-dark mt-40">“Mình có pha quay xe ngoạn mục để nâng
+                                            tầm đạt 8.0
+                                            Overall và bất ngờ đạt 7.5 Writing, tất cả là nhờ học Tư duy 4 chiều và Giá
+                                            trị văn học
+                                            trong triển khai bài viết của thầy Vũ. Ban đầu, những kiến thức ấy thực sự
+                                            mình cũng không
+                                            tin tưởng sẽ giúp ích được gì vì chưa nghe đến bao giờ nhưng thật không ngờ
+                                            đó là một kho
+                                            báu có giá trị lớn đến vậy. Mình đoán chắc chỉ có thầy Vũ mới nghĩ ra được
+                                            phương pháp học
+                                            IELTS dựa trên kiến thức của ngành Khoa học máy tính độc đáo đến như vậy”.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex-grow-1">
-                        <div class="fw-bold text-primary font-size-18">BẢO HƯNG – IELTS OVERALL 8.0 </div>
-                        <div class="font-size-15 text-dark">Trường THPT chuyên Trần Phú</div>
-                        <div class="font-size-15 text-dark mt-40">“Mình có pha quay xe ngoạn mục để nâng tầm đạt 8.0
-                            Overall và bất ngờ đạt 7.5 Writing, tất cả là nhờ học Tư duy 4 chiều và Giá trị văn học
-                            trong triển khai bài viết của thầy Vũ. Ban đầu, những kiến thức ấy thực sự mình cũng không
-                            tin tưởng sẽ giúp ích được gì vì chưa nghe đến bao giờ nhưng thật không ngờ đó là một kho
-                            báu có giá trị lớn đến vậy. Mình đoán chắc chỉ có thầy Vũ mới nghĩ ra được phương pháp học
-                            IELTS dựa trên kiến thức của ngành Khoa học máy tính độc đáo đến như vậy”.</div>
+                    <div class="navigation-holder-1">
+                        <div class="swiper-button-prev swiper-button-position-3 swiper-button-primary shadow"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
+                                <path fill="currentColor" fill-rule="evenodd"
+                                    d="m3.96 6.15 5.08-4.515L7.91.365.445 7l7.465 6.635 1.13-1.27L3.96 7.85h15.765v-1.7H3.96Z"
+                                    clip-rule="evenodd" />
+                            </svg></div>
+                        <div class="swiper-button-next swiper-button-position-3 swiper-button-primary shadow"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
+                                <path fill="currentColor" fill-rule="evenodd"
+                                    d="m16.21 6.15-5.08-4.515 1.13-1.27L19.725 7l-7.465 6.635-1.13-1.27 5.08-4.515H.445v-1.7H16.21Z"
+                                    clip-rule="evenodd" />
+                            </svg></div>
                     </div>
                 </div>
             </div>
@@ -191,6 +252,17 @@
                         thời gian ngắn</div>
                 </div>
             </div>
+            <div class="col-md-8">
+                <div class="course-slide h-100">
+                    <div class="card bg-dark text-white h-100">
+                        <img src="{{asset('hocvienielts/video-thumbnail.png')}}" class="card-img h-100"
+                            style="object-fit: cover;" alt="Khóa học">
+                        <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
+                            <a class="btn btn-outline">Xem chi tiết khóa học</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -207,24 +279,25 @@
                     <div class="row g-20">
                         <div class="col-md-4">
                             <div class="form-group">
-                            <label class="form-label visually-hidden" for="form-reg-name">Họ và tên</label>
-                            <input class="form-control" id="form-reg-name" name="full_name" type="text"
-                                placeholder="Họ và tên">
+                                <label class="form-label visually-hidden" for="form-reg-name">Họ và tên</label>
+                                <input class="form-control" id="form-reg-name" name="full_name" type="text"
+                                    placeholder="Họ và tên">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                            <label class="form-label visually-hidden" for="form-reg-phonenumber">Số điện thoại</label>
-                            <input class="form-control" id="form-reg-phonenumber" name="phone" type="text"
-                                placeholder="Số điện thoại">
+                                <label class="form-label visually-hidden" for="form-reg-phonenumber">Số điện
+                                    thoại</label>
+                                <input class="form-control" id="form-reg-phonenumber" name="phone" type="text"
+                                    placeholder="Số điện thoại">
                             </div>
                         </div>
                         <div class="col-md-4">
-                        <div class="form-group">
-                            <label class="form-label visually-hidden" for="form-reg-Email">Email</label>
-                            <input class="form-control" id="form-reg-Email" name="email" type="email"
-                                placeholder="Email">
-</div>
+                            <div class="form-group">
+                                <label class="form-label visually-hidden" for="form-reg-Email">Email</label>
+                                <input class="form-control" id="form-reg-Email" name="email" type="email"
+                                    placeholder="Email">
+                            </div>
                         </div>
                         <div class="col-md-4">
                             <label class="form-label visually-hidden" for="form-reg-work">Band điểm</label>
@@ -236,7 +309,7 @@
                             <label class="form-label visually-hidden" for="form-reg-address">Mục tiêu</label>
                             <select class="form-select form-select-default" id="form-reg-address" name="branch_id">
                                 <option selected="selected" value="0">Mục tiêu của bạn là?</option>
-                              
+
                             </select>
                         </div>
                         <div class="col-md-4">

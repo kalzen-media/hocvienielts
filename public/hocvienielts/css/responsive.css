@@ -4,13 +4,36 @@
     {
         padding: 25px 60px;
     }
+    .navigation-holder-1
+    {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 100px;
+    }
+    .navigation-holder-1 .swiper-button-prev
+    {
+      left:auto; 
+    } 
+    .navigation-holder-1 .swiper-button-next.swiper-button-position-3
+    {
+      right: 0px;
+    }
   }
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
     .form-contact
     {
-        padding: 25px
-        ;
+        padding: 25px;
+    }
+    .box-info .number
+    {
+      font-size: 30px;
+    }
+    .box-info
+    {
+      margin-bottom: 10px;
+      
     }
   }

@@ -40,8 +40,8 @@
     <link rel="stylesheet" href="{{asset('hocvienielts/vendors/css/magnific-popup.css')}}">
     <link rel="stylesheet" href="{{asset('hocvienielts/vendors/css/swiper-bundle.css')}}">
     <link rel="stylesheet" href="{{asset('hocvienielts/css/main.css')}}">
-    <link rel="stylesheet" href="{{asset('hocvienielts/css/responsive.css')}}">
     <link rel="stylesheet" href="{{asset('hocvienielts/css/custom.css')}}">
+    <link rel="stylesheet" href="{{asset('hocvienielts/css/responsive.css')}}">
     <!-- endbuild -->
     <!-- jQuery-->
     <script src="{{asset('hocvienielts/vendors/js/jquery.min.js')}}"></script>
@@ -78,8 +78,8 @@
                             <h6 class="display-6 text-white mb-20">Liên kết</h6>
                             <ul class="nav flex-column text-white nav-opacity nav-gap-sm">
                                 <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Tin tức</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('post.list')}}">Tin tức</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('contact')}}">Liên hệ</a></li>
                             </ul>
                         </div>
                         <div class="col-6 col-md-4">
@@ -118,7 +118,9 @@
     <script src="{{asset('hocvienielts/js/controllers/navbar.js')}}"></script>
     <script src="{{asset('hocvienielts/js/controllers/stretch-column.js')}}"></script>
     <script src="{{asset('hocvienielts/js/controllers/swiper.js')}}"></script>
-    <script src="{{asset('hocvienielts/js/controllers/others.js')}}"></script><!-- endbuild -->
+    <script src="{{asset('hocvienielts/js/controllers/others.js')}}"></script>
+    <script src="{{asset('hocvienielts/js/custom.js')}}"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
