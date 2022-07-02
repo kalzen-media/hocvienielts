@@ -29,7 +29,7 @@
                                         d="M16 11.98v2.408a1.604 1.604 0 0 1-1.094 1.527 1.613 1.613 0 0 1-.66.079 15.941 15.941 0 0 1-6.943-2.465A15.672 15.672 0 0 1 2.476 8.71a15.869 15.869 0 0 1-2.47-6.96A1.603 1.603 0 0 1 .96.136C1.163.047 1.384 0 1.607 0h2.414A1.61 1.61 0 0 1 5.63 1.381c.102.77.29 1.528.563 2.256a1.603 1.603 0 0 1-.362 1.694l-1.022 1.02a12.86 12.86 0 0 0 4.827 4.817l1.022-1.02a1.61 1.61 0 0 1 1.697-.36c.73.271 1.489.46 2.26.561A1.61 1.61 0 0 1 16 11.98Z" />
                                 </svg></div>
                             <div class="flex-grow-1 ms-15">
-                                <h5 class="m-0">Contact info:</h5>
+                                <h5 class="m-0">Thông tin liên hệ:</h5>
                                 <p class="m-0 mt-15">Email: example@gmail.com <br>Phone: 0988765321</p>
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                                         clip-rule="evenodd" />
                                 </svg></div>
                             <div class="flex-grow-1 ms-15">
-                                <h5 class="m-0">Address:</h5>
+                                <h5 class="m-0">Địa chỉ:</h5>
                                 <p class="m-0 mt-15">Số 124 Tô Hiệu, <br>Lê Chân, Hải Phòng</p>
                             </div>
                         </div>
@@ -63,8 +63,8 @@
                                         clip-rule="evenodd" />
                                 </svg></div>
                             <div class="flex-grow-1 ms-15">
-                                <h5 class="m-0">Hours of operation:</h5>
-                                <p class="m-0 mt-15">Monday - Friday <br>10:00 am - 7:30 pm</p>
+                                <h5 class="m-0">Thời gian hoạt động:</h5>
+                                <p class="m-0 mt-15">Thứ 2 - Chủ nhật <br>8H - 21H30</p>
                             </div>
                         </div>
                     </div>

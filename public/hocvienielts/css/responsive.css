@@ -36,4 +36,23 @@
       margin-bottom: 10px;
       
     }
+    .background-image
+    {
+      height: 300px !important;
+      margin: 10px 0px;
+    }
+    .course-slide
+    {
+      margin-top: 20px;
+    }
+    .py-60
+    {
+      padding-top: 30px !important;
+      padding-bottom: 30px !important;
+    }
+    .px-70
+    {
+      padding-left: 35px !important; 
+      padding-right: 35px !important;
+    }
   }

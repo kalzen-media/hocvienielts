@@ -7,7 +7,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide h-auto">
                     <a href="#">
-                        <img loading="lazy" src="{{asset('hocvienielts/banner-web-1.png')}}"
+                        <img loading="lazy" src="{{asset('hocvienielts/banner-2.jpg')}}"
                             data-swiper-parallax-x="20%" alt="">
                     </a>
                 </div>
@@ -90,12 +90,15 @@
     <div class="container">
         <h3 class="section-title text-center text-white">HỌC VIÊN NÓI GÌ VỀ THE IELTS ACADEMY</h3>
         <div class="row">
-            <div class="bg-white rounded-4 py-60 px-70 animated" data-show="startbox" data-show-delay="200"
+            <div class="bg-white rounded-4 py-60 px-70 animated mb-40" data-show="startbox" data-show-delay="200"
                 style="transform: translateY(0px); transition-duration: 500ms; opacity: 1;">
                 <div class="swiper" data-swiper-slides="1">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
+                            <div class="text-center d-block d-sm-none mb-10"><img class="rounded-circle"
+                                            loading="lazy" src="{{asset('hocvienielts/testimonial-example.png')}}"
+                                            alt="hocvien" height="150" width="150"> </div>
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0 d-none d-xl-block me-40"><img class="rounded-circle"
                                             loading="lazy" src="{{asset('hocvienielts/testimonial-example.png')}}"
@@ -121,6 +124,9 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
+                                <div class="text-center d-block d-sm-none mb-10"><img class="rounded-circle"
+                                            loading="lazy" src="{{asset('hocvienielts/testimonial-example.png')}}"
+                                            alt="hocvien" height="150" width="150"> </div>
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0 d-none d-xl-block me-40"><img class="rounded-circle"
                                             loading="lazy" src="{{asset('hocvienielts/testimonial-example.png')}}"
@@ -231,7 +237,7 @@
         <h3 class="section-title text-center text-primary">CÁC KHÓA HỌC Ở THE IELTS ACADEMY</h3>
         <div class="row">
             <div class="col-md-4">
-                <div class="course-item rounded-3 p-20 shadow-sm bg-white">
+                <div class="course-item rounded-3 p-20 shadow-sm bg-white active">
                     <h6 class="text-primary">IELTS FOUNDATION</h6>
                     <div class="font-size-15">Khoá học nền tảng bổ sung các kiến thức tiếng Anh học thuật ở cấp độ cơ
                         bản giúp học viên sẵn sàng học chuyên sâu về IELTS</div>
@@ -266,7 +272,7 @@
         </div>
     </div>
 </section>
-<section class="section-contact">
+<section class="section-contact py-60">
     <div class="container">
         <form class="bg-primary-dark form-contact form-reg" action="{{ route('contact') }}" method="post">
             <div class="row align-items-center gy-3">
@@ -300,16 +306,23 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <label class="form-label visually-hidden" for="form-reg-work">Band điểm</label>
+                            <label class="form-label visually-hidden" for="form-reg-work">Band điểm mục tiêu?</label>
                             <select class="form-select form-select-default" id="form-reg-work" name="job">
-                                <option selected="selected">Band điểm?</option>
+                                <option selected="selected" value="0">Band điểm của bạn</option>
+                                <option value="0 - 4.5">0 - 4.5</option>
+                                <option value="5.0 - 5.5">5.0 - 5.5</option>
+                                <option value="6.0 - 6.5">6.0 - 6.5</option>
+                                <option value="7.0 +">7.0 +</option>
                             </select>
                         </div>
                         <div class="col-md-4">
-                            <label class="form-label visually-hidden" for="form-reg-address">Mục tiêu</label>
+                            <label class="form-label visually-hidden" for="form-reg-address">Nội dung cần tư vấn?</label>
                             <select class="form-select form-select-default" id="form-reg-address" name="branch_id">
-                                <option selected="selected" value="0">Mục tiêu của bạn là?</option>
-
+                                <option selected="selected" value="0">Nội dung bạn cần tư vấn</option>
+                                <option value="Test năng lực0">Test năng lực</option>
+                                <option value="Tư vấn khóa học IELTS">Tư vấn khóa học IELTS</option>
+                                <option value="Đăng ký thi thử IELTS">Đăng ký thi thử IELTS</option>
+                                <option value="Khác">Khác</option>
                             </select>
                         </div>
                         <div class="col-md-4">
