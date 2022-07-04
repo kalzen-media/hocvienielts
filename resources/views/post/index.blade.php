@@ -31,49 +31,48 @@
                 </ol>
             </nav>
             <div class="col-lg-8">
+                @foreach ($posts as $post)
+                @if($loop->index == 0)
                 <article class="card card-post-2">
-                    <a class="thumbnail  hover-overlay mb-3" href="#">
-                        <img class="thumbnail-img" loading="lazy"
-                            src="{{ asset('hocvienielts/img/blog/single-post-video-1920x900.jpg')}}"
-                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+                    <a class="thumbnail  hover-overlay mb-3" href="{{$post->url}}">
+                        <img class="thumbnail-img" loading="lazy" src="{{$post->images->first()->url}}" alt="{{$post->title}}">
                     </a>
                     <div class="card-body p-0">
                         <h5 class="card-title mt-10">
-                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                            <a href="{{$post->url}}">{{$post->title}}</a>
                         </h5>
-                        <p class="card-text text-muted">Curabitur semper interdum velit cursus tristique. Nulla feugiat
-                            venenatis nisl, et feugiat erat aliquam nec. Phasellus convallis sapien sit amet nisi varius
-                            mattis. Fusce</p>
+                        <p class="card-text text-muted">{{ $post->description}}</p>
                         <div class="d-flex justify-content-between text-muted">
-                            <p>2022-06-02 15:30:24</p>
-                            <p>181 lượt xem</p>
+                            <p>{{ $post->created_at}}</p>
+                            <p>{{ $post->viewed}} lượt xem</p>
                         </div>
                     </div>
                 </article>
+                @endif
+                @endforeach
                 <hr>
                 <div class="list-post">
+                @foreach ($posts as $post)
+                @if($loop->index > 0)
                     <article class="card card-post">
                         <div class="row g-3 gx-md-4">
                             <div class="col-sm-5">
-                            <a class="thumbnail  hover-overlay mb-3" href="#">
+                            <a class="thumbnail  hover-overlay mb-3" href="{{$post->url}}">
                         <img class="thumbnail-img" loading="lazy"
-                            src="{{ asset('hocvienielts/img/about-us-3-900x630.jpg')}}"
-                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+                            src="{{$post->images->first()->url}}"
+                            alt="{{$post->title}}">
                     </a>
                             </div>
                             <div class="col-sm-7">
                                 <div class="card-body">
                                     <h5 class="card-title">
                                         <a
-                                            href="{{ asset('hocvienielts/img/about-us-3-900x630.jpg')}}">Chuỗi
-                                            workshop Intensive IELTS - đồng hành chinh phục IELTS 4 kỹ năng</a>
+                                            href="{{$post->url}}">{{$post->title}}</a>
                                     </h5>
-                                    <p class="card-text text-muted mb-2">Từ tháng 2 đến tháng 5, IELTS Fighter tổ chức
-                                        chuỗi Intensive IELTS cùng chia sẻ cách học và thực hành cách học nâng cao, phát
-                                        triển toàn diện các kỹ năng bên cạnh chuỗi dự án học tập chuyên sâu hàng tháng.
+                                    <p class="card-text text-muted mb-2">{{ \Illuminate\Support\Str::limit($post->description, 150, $end='...') }}
                                     </p>
                                     <a class="card-read-more text-muted mt-auto fs-sm"
-                                        href="#">Xem
+                                        href="{{$post->url}}">Xem
                                         chi tiết</td>
                                     </a>
                                 </div>
@@ -81,93 +80,8 @@
                         </div>
                     </article>
                     <hr>
-                    <article class="card card-post">
-                        <div class="row g-3 gx-md-4">
-                            <div class="col-sm-5">
-                            <a class="thumbnail  hover-overlay mb-3" href="#">
-                        <img class="thumbnail-img" loading="lazy"
-                            src="{{ asset('hocvienielts/img/about-us-3-900x630.jpg')}}"
-                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
-                    </a>
-                            </div>
-                            <div class="col-sm-7">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a
-                                            href="{{ asset('hocvienielts/img/about-us-3-900x630.jpg')}}">Chuỗi
-                                            workshop Intensive IELTS - đồng hành chinh phục IELTS 4 kỹ năng</a>
-                                    </h5>
-                                    <p class="card-text text-muted mb-2">Từ tháng 2 đến tháng 5, IELTS Fighter tổ chức
-                                        chuỗi Intensive IELTS cùng chia sẻ cách học và thực hành cách học nâng cao, phát
-                                        triển toàn diện các kỹ năng bên cạnh chuỗi dự án học tập chuyên sâu hàng tháng.
-                                    </p>
-                                    <a class="card-read-more text-muted mt-auto fs-sm"
-                                        href="#">Xem
-                                        chi tiết</td>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <hr>
-                    <article class="card card-post">
-                        <div class="row g-3 gx-md-4">
-                            <div class="col-sm-5">
-                            <a class="thumbnail  hover-overlay mb-3" href="#">
-                        <img class="thumbnail-img" loading="lazy"
-                            src="{{ asset('hocvienielts/img/about-us-3-900x630.jpg')}}"
-                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
-                    </a>
-                            </div>
-                            <div class="col-sm-7">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a
-                                            href="{{ asset('hocvienielts/img/about-us-3-900x630.jpg')}}">Chuỗi
-                                            workshop Intensive IELTS - đồng hành chinh phục IELTS 4 kỹ năng</a>
-                                    </h5>
-                                    <p class="card-text text-muted mb-2">Từ tháng 2 đến tháng 5, IELTS Fighter tổ chức
-                                        chuỗi Intensive IELTS cùng chia sẻ cách học và thực hành cách học nâng cao, phát
-                                        triển toàn diện các kỹ năng bên cạnh chuỗi dự án học tập chuyên sâu hàng tháng.
-                                    </p>
-                                    <a class="card-read-more text-muted mt-auto fs-sm"
-                                        href="#">Xem
-                                        chi tiết</td>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <hr>
-                    <article class="card card-post">
-                        <div class="row g-3 gx-md-4">
-                            <div class="col-sm-5">
-                            <a class="thumbnail  hover-overlay mb-3" href="#">
-                        <img class="thumbnail-img" loading="lazy"
-                            src="{{ asset('hocvienielts/img/about-us-3-900x630.jpg')}}"
-                            alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
-                    </a>
-                            </div>
-                            <div class="col-sm-7">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <a
-                                            href="{{ asset('hocvienielts/img/about-us-3-900x630.jpg')}}">Chuỗi
-                                            workshop Intensive IELTS - đồng hành chinh phục IELTS 4 kỹ năng</a>
-                                    </h5>
-                                    <p class="card-text text-muted mb-2">Từ tháng 2 đến tháng 5, IELTS Fighter tổ chức
-                                        chuỗi Intensive IELTS cùng chia sẻ cách học và thực hành cách học nâng cao, phát
-                                        triển toàn diện các kỹ năng bên cạnh chuỗi dự án học tập chuyên sâu hàng tháng.
-                                    </p>
-                                    <a class="card-read-more text-muted mt-auto fs-sm"
-                                        href="#">Xem
-                                        chi tiết</td>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <hr>
+                    @endif
+                @endforeach
                 </div>
             </div>
             <div class="col-lg-4">
