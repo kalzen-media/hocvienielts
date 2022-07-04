@@ -182,7 +182,7 @@
                 <!-- Member-->
                 <div class="member "><a class="member-image" href="#" data-img-height=""
                         style="--img-height: 114%;"><img loading="lazy"
-                            src="{{asset('hocvienielts/img/team/member-8.jpg')}}" alt="team"></a>
+                            src="{{asset('hocvienielts/images/team/vu.jpg')}}" alt="team"></a>
                     <div class="member-body"><a class="member-title h4 text-primary" href="#">Nguyễn Đình Vũ</a>
                         <div class="member-subtitle font-size-15 text-gray-dark">The definition of insanity is doing the
                             same thing over and over again and expecting different results - Định nghĩa của sự điên rồ
@@ -195,7 +195,7 @@
                 <!-- Member-->
                 <div class="member "><a class="member-image" href="#" data-img-height=""
                         style="--img-height: 114%;"><img loading="lazy"
-                            src="{{asset('hocvienielts/img/team/member-1.jpg')}}" alt="team"></a>
+                            src="{{asset('hocvienielts/images/team/lien.JPG')}}" alt="team"></a>
                     <div class="member-body"><a class="member-title h4 text-primary" href="#">Ms. Phương Liên</a>
                         <div class="member-subtitle font-size-15 text-gray-dark">We can be truly successful only at
                             something we're willing to fail at. If we're unwilling to fail, then we're unwilling to
@@ -209,7 +209,7 @@
                 <!-- Member-->
                 <div class="member "><a class="member-image" href="#" data-img-height=""
                         style="--img-height: 114%;"><img loading="lazy"
-                            src="{{asset('hocvienielts/img/team/member-2.jpg')}}" alt="team"></a>
+                            src="{{asset('hocvienielts/images/team/phuong.JPG')}} alt="team"></a>
                     <div class="member-body"><a class="member-title h4 text-primary" href="#">Ms. Như Phương</a>
                         <div class="member-subtitle font-size-15 text-gray-dark">You are what you do, not what you say
                             you will do - Bạn là những gì bạn làm, chứ không phải những gì bạn nói bạn sẽ làm.</div>
@@ -221,7 +221,7 @@
                 <!-- Member-->
                 <div class="member "><a class="member-image" href="#" data-img-height=""
                         style="--img-height: 114%;"><img loading="lazy"
-                            src="{{asset('hocvienielts/img/team/member-3.jpg')}}" alt="team"></a>
+                            src="{{asset('hocvienielts/images/team/van.JPG')}}" alt="team"></a>
                     <div class="member-body"><a class="member-title h4 text-primary" href="#">Ms. Khánh Vân </a>
                         <div class="member-subtitle font-size-15 text-gray-dark">Practice makes perfect – Trăm hay không
                             bằng tay làm.</div>
