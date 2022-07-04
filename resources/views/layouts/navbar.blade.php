@@ -5,7 +5,7 @@
             <ul class="nav navbar-nav order-2 ms-auto nav-no-opacity">
                 <li class="nav-item navbar-dropdown"><a class="nav-link" href="{{route('index')}}"><span>Trang chủ</span></a>
                 </li>
-                <li class="nav-item navbar-dropdown"><a class="nav-link" href="#"><span>Giới thiệu</span></a>
+                <li class="nav-item navbar-dropdown"><a class="nav-link" href="{{route('about')}}"><span>Giới thiệu</span></a>
                     <div class="dropdown-menu rounded-2 shadow">
                         <ul class="nav navbar-nav">
                             <li class="nav-item"><a class="nav-link" href="#"><span>Link 01</span></a></li>
@@ -17,10 +17,10 @@
                 <li class="nav-item navbar-dropdown"><a class="nav-link" href="{{ route('post.category', ['alias' => 'khoa-hoc'])}}"><span>Khóa Học</span></a>
                 <div class="dropdown-menu rounded-2 shadow">
                 <ul class="nav navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#">IELTS FOUNDATION</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">FORWARD IELTS</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">IELTS ADVANCED</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">IELTS COACHING</a></li>
+                <li class="nav-item"><a class="nav-link" href="/tin-tuc/khoa-hoc-ielts-foudation">IELTS FOUNDATION</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/khoa-hoc-forward-ielts">FORWARD IELTS</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/khoa-hoc-ielts-advanced">IELTS ADVANCED</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/khoa-hoc-ielts-coaching">IELTS COACHING</a></li>
                         </ul>
 </div>
                 </li>
@@ -42,23 +42,23 @@
                 <ul class="nav navbar-nav navbar-nav-collapse">
                     <li class="nav-item navbar-collapse"><a class="nav-link" href="{{route('index')}}" ><span>Trang chủ</span></a>
                     </li>
-                    <li class="nav-item navbar-collapse"><a class="nav-link" href="#navbarCollapseServices" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbarCollapseServices"><span>Giới thiệu</span></a>
+                    <li class="nav-item navbar-collapse"><a class="nav-link" href="{{route('about')}}" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbarCollapseServices"><span>Giới thiệu</span></a>
                     </li>
-                    <li class="nav-item navbar-collapse"><a class="nav-link" href="#navbarCollapsePages" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbarCollapsePages"><span>Khóa học</span></a>
+                    <li class="nav-item navbar-collapse"><a class="nav-link" href="{{ route('post.category', ['alias' => 'khoa-hoc'])}}" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbarCollapsePages"><span>Khóa học</span></a>
                         <div class="navbar-collapse-menu collapse" id="navbarCollapsePages">
                             <ul class="nav navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="#">IELTS FOUNDATION</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">FORWARD IELTS</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">IELTS ADVANCED</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">IELTS COACHING</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/tin-tuc/khoa-hoc-ielts-foudation">IELTS FOUNDATION</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/khoa-hoc-forward-ielts">FORWARD IELTS</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/khoa-hoc-ielts-advanced">IELTS ADVANCED</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/khoa-hoc-ielts-coaching">IELTS COACHING</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item navbar-collapse"><a class="nav-link" href="#navbarCollapsePortfolio" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbarCollapsePortfolio"><span>Test online</span></a>
+                    <li class="nav-item navbar-collapse"><a class="nav-link" href="{{ route('post.category', ['alias' => 'tai-lieu'])}}" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbarCollapsePortfolio"><span>Tài liệu</span></a>
                     </li>
-                    <li class="nav-item navbar-collapse"><a class="nav-link" href="#navbarCollapseBlog" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbarCollapseBlog"><span>Tư vấn</span></a>
+                    <li class="nav-item navbar-collapse"><a class="nav-link" href="{{ route('post.list')}}" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbarCollapseBlog"><span>Tư vấn</span></a>
                     </li>
-                    <li class="nav-item navbar-collapse"><a class="nav-link" href="#navbarCollapseContact" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbarCollapseContact"><span>Tin tức</span></a>
+                    <li class="nav-item navbar-collapse"><a class="nav-link" href="{{ route('contact')}}" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbarCollapseContact"><span>Tin tức</span></a>
                     </li>
                     <li class="nav-item navbar-collapse"><a href="{{ route('contact')}}" class="nav-link"><span>Liên hệ</span></a>
                     </li>
