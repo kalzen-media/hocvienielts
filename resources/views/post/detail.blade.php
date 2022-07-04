@@ -17,18 +17,20 @@
         </div>
         <div class="container">
             <div class="row pt-120 pb-60">
-                <div class="col-12 col-lg-8 offset-lg-2">
-                    <div class="subtitle mb-15 font-size-15 fw-medium text-gray-dark">Company <span class="sep-dot"></span> {{date('d/m/Y',strtotime($post->updated_at))}}</div>
+                <div class="col-12 col-lg-8">
+                    <div class="subtitle mb-15 font-size-15 fw-medium text-gray-dark">{{$post->categories->first()->name}} <span class="sep-dot"></span> {{date('d/m/Y',strtotime($post->updated_at))}}</div>
                     <h1 class="m-0 pe-30">{{$post->title}}</h1>
-                </div>
-            </div>
-			<hr>
-            <div class="row">
-                <div class="col-12 col-lg-8 offset-lg-2">
 				{!!$post->content!!}
                </div>
-            </div>
-			
+			   <div class="col-lg-4">
+			   <h4 class="mrb-30 single-blog-widget-title">Danh mục</h4>
+							<ul class="list">
+                            @foreach($categories as $category)
+								<li><i class="fas fa-caret-right vertical-align-middle text-primary-color mrr-10"></i><a href="{{ route('post.category', ['alias' => $category->slug]) }}">{{ $category->name }}</a></li>
+							@endforeach
+                            </ul>
+				</div>
+			</div>
         </div>
     </div><!-- Footer-->
 @endsection
