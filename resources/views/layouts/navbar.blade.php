@@ -14,7 +14,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="nav-item navbar-dropdown"><a class="nav-link" href="about-us.html"><span>Khóa Học</span></a>
+                <li class="nav-item navbar-dropdown"><a class="nav-link" href="{{ route('post.category', ['alias' => 'khoa-hoc'])}}"><span>Khóa Học</span></a>
                 <div class="dropdown-menu rounded-2 shadow">
                 <ul class="nav navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="#">IELTS FOUNDATION</a></li>
@@ -26,7 +26,7 @@
                 </li>
                 <li class="nav-item navbar-dropdown"><a class="nav-link" href="#"><span>Tư vấn</span></a>
                 </li>
-                <li class="nav-item navbar-dropdown"><a class="nav-link" href="#"><span>Tài liệu</span></a>
+                <li class="nav-item navbar-dropdown"><a class="nav-link" href="{{ route('post.category', ['alias' => 'tai-lieu'])}}"><span>Tài liệu</span></a>
                 </li>
                 <li class="nav-item navbar-dropdown"><a class="nav-link" href="{{ route('post.list')}}"><span>Tin tức</span></a>
                 </li>

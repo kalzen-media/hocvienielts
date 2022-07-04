@@ -209,7 +209,7 @@
                 <!-- Member-->
                 <div class="member "><a class="member-image" href="#" data-img-height=""
                         style="--img-height: 114%;"><img loading="lazy"
-                            src="{{asset('hocvienielts/images/team/phuong.JPG')}} alt="team"></a>
+                            src="{{asset('hocvienielts/images/team/phuong.JPG')}}" alt="team"></a>
                     <div class="member-body"><a class="member-title h4 text-primary" href="#">Ms. Như Phương</a>
                         <div class="member-subtitle font-size-15 text-gray-dark">You are what you do, not what you say
                             you will do - Bạn là những gì bạn làm, chứ không phải những gì bạn nói bạn sẽ làm.</div>
