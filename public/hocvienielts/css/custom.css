@@ -144,3 +144,10 @@ section.course .course-item:hover h6,  section.course .course-item.active h6
     background: transparent;
     color: #fff;
 }
+#bg-course
+{
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background-size: cover;
+}
