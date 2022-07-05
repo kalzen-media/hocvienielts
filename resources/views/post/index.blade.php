@@ -73,7 +73,7 @@
                                     </p>
                                     <a class="card-read-more text-muted mt-auto fs-sm"
                                         href="{{$post->url}}">Xem
-                                        chi tiết</td>
+                                        chi tiết
                                     </a>
                                 </div>
                             </div>

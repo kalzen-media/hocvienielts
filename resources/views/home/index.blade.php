@@ -37,9 +37,11 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <div class="background-image w-100 h-100 position-relative overflow-hidden" data-show="startbox"
+                <div class="background-image w-100 h-100 position-relative overflow-hidden popup-youtube" data-show="startbox"
                     style="border-radius: 20px;">
+                    <a class="popup-video" href="https://www.youtube.com/watch?v=qv8RAliQuL8">
                     <img loading="lazy" src="{{asset('hocvienielts/video-thumbnail.png')}}" alt="video">
+</a>
                 </div>
             </div>
             <div class="col-lg-6">
