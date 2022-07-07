@@ -228,7 +228,7 @@
         <h3 class="section-title text-center text-primary">CÁC KHÓA HỌC Ở THE IELTS ACADEMY</h3>
         <div class="row">
             <div class="col-md-4">
-            <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20 active" data-image="{{asset('hocvienielts/images/khoa-1.JPG')}}" data-url = "/tin-tuc/khoa-hoc-forward-ielts">
+            <div class="course-item rounded-3 p-20 shadow-sm bg-white active" data-image="{{asset('hocvienielts/images/khoa-1.JPG')}}" data-url = "/tin-tuc/khoa-hoc-forward-ielts">
                     <h6 class="text-primary">FORWARD IELTS</h6>
                     <div class="font-size-15">– Khoá học tập trung hoàn thiện 4 kỹ năng Nghe – Nói – Đọc – Viết tiếng
                         Anh học thuật ở cấp độ Sơ cấp – Trung cấp </div>
