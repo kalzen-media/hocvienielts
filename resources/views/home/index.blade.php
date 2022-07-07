@@ -233,7 +233,7 @@
                     <div class="font-size-15">– Khoá học tập trung hoàn thiện 4 kỹ năng Nghe – Nói – Đọc – Viết tiếng
                         Anh học thuật ở cấp độ Sơ cấp – Trung cấp </div>
                 </div>
-                <div class="course-item rounded-3 p-20 shadow-sm bg-white" data-image="{{asset('hocvienielts/video-thumbnail.png')}}" data-url = "/tin-tuc/khoa-hoc-ielts-foudation">
+                <div class="course-item rounded-3 p-20 shadow-sm mt-20 bg-white" data-image="{{asset('hocvienielts/video-thumbnail.png')}}" data-url = "/tin-tuc/khoa-hoc-ielts-foudation">
                     <h6 class="text-primary">IELTS FOUNDATION</h6>
                     <div class="font-size-15">Khoá học nền tảng bổ sung các kiến thức tiếng Anh học thuật ở cấp độ cơ
                         bản giúp học viên sẵn sàng học chuyên sâu về IELTS</div>
