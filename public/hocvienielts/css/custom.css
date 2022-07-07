@@ -151,3 +151,7 @@ section.course .course-item:hover h6,  section.course .course-item.active h6
     transition: all .3s ease-in-out;
     background-size: cover;
 }
+.form-select option{
+    background: #1f4320;
+    color: #fff;
+}

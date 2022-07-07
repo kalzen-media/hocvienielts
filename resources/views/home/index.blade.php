@@ -228,7 +228,7 @@
         <h3 class="section-title text-center text-primary">CÁC KHÓA HỌC Ở THE IELTS ACADEMY</h3>
         <div class="row">
             <div class="col-md-4">
-            <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20 active" data-image="{{asset('hocvienielts/img/home-2-slider-2-900x830.jpg')}}" data-url = "/tin-tuc/khoa-hoc-forward-ielts">
+            <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20 active" data-image="{{asset('hocvienielts/images/khoa-1.JPG')}}" data-url = "/tin-tuc/khoa-hoc-forward-ielts">
                     <h6 class="text-primary">FORWARD IELTS</h6>
                     <div class="font-size-15">– Khoá học tập trung hoàn thiện 4 kỹ năng Nghe – Nói – Đọc – Viết tiếng
                         Anh học thuật ở cấp độ Sơ cấp – Trung cấp </div>
@@ -239,12 +239,12 @@
                         bản giúp học viên sẵn sàng học chuyên sâu về IELTS</div>
                 </div>
                 
-                <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20" data-image="{{asset('hocvienielts/img/home-2-slider-3-900x830.jpg')}}" data-url = "/tin-tuc/khoa-hoc-ielts-advanced">
+                <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20" data-image="{{asset('hocvienielts/images/khoa-2.JPG')}}" data-url = "/tin-tuc/khoa-hoc-ielts-advanced">
                     <h6 class="text-primary">IELTS ADVANCED</h6>
                     <div class="font-size-15">Khoá học chuyên sâu 4 kỹ năng ở mức Cao cấp giúp học viên đạt mục tiêu
                         Overall 7.0+ </div>
                 </div>
-                <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20" data-image="{{asset('hocvienielts/img/home-2-slider-4-900x830.jpg')}}" data-url = "/tin-tuc/khoa-hoc-ielts-coaching">
+                <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20" data-image="{{asset('hocvienielts/images/khoa-3.JPG')}}" data-url = "/tin-tuc/khoa-hoc-ielts-coaching">
                     <h6 class="text-primary">IELTS COACHING</h6>
                     <div class="font-size-15">Khoá học với mô hình 1-1, 1-2, 1-3 giúp học viên bổ sung cấp tốc trong
                         thời gian ngắn</div>
