@@ -32,7 +32,7 @@
                                 </svg></div>
                             <div class="flex-grow-1 ms-15">
                                 <h5 class="m-0">Thông tin liên hệ:</h5>
-                                <p class="m-0 mt-15">Email: example@gmail.com <br>Phone: 0988765321</p>
+                                <p class="m-0 mt-15">Email: theieltsacademyvn@gmail.com <br>Hotline: 039 902 0894</p>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                                 </svg></div>
                             <div class="flex-grow-1 ms-15">
                                 <h5 class="m-0">Địa chỉ:</h5>
-                                <p class="m-0 mt-15">Số 124 Tô Hiệu, <br>Lê Chân, Hải Phòng</p>
+                                <p class="m-0 mt-15"><b>Cơ sở 1:</b> 124 Tô Hiệu, P. Trại Cau, Q. Lê Chân, TP. Hải Phòng </br><b>Cơ sở 2:</b> Số 14, Ngõ 10, Nguyễn Văn Huyên, Q. Cầu Giấy, TP. Hà Nội</p>
                             </div>
                         </div>
                     </div>
@@ -71,6 +71,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="map">
+                <iframe style="width: 100%; height: 450px" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14914.022574530882!2d106.681954!3d20.85166!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2038a9e5eb0dd1c9!2sTHE%20IELTS%20ACADEMY!5e0!3m2!1svi!2s!4v1657160473725!5m2!1svi!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
             </div>
         </div>
     </div>

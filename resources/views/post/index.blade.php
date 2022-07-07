@@ -86,7 +86,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="ads">
-                    <a href="#"><img src="https://st.ielts-fighter.com/resize/ielts-fighter-image/500x500/2022/03/09/a7b6a98d-4619-4a31-b545-f27b390d6301.jpg" alt="quảng cáo"></a>
+                    <a href="#"><img src="{{ asset('hocvienielts/ads.jpg') }}" alt="quảng cáo"></a>
                 </div>
             </div>
         </div>

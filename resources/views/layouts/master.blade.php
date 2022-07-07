@@ -50,11 +50,12 @@
 <body class="has-topbar">
     @yield('content')
     <!-- Footer-->
-    <footer class="bg-dark text-white pt-120 pb-100 footerNext">
+    <footer class="bg-primary text-white pt-120 pb-100 footerNext">
         <div class="container">
             <div class="row gy-50">
-                <div class="col-12 col-lg-3"><a class="d-block mb-30" href="{{ route('index')}}"><img src="{{ asset('hocvienielts/logo.png')}}"></a>
-                    <p class="font-size-15 mb-35">Them and one moving the won't <br>may, moving saw wherein.</p>
+                <div class="col-12 col-lg-3"><a class="d-block mb-30" href="{{ route('index')}}"><img src="{{ asset('hocvienielts/images/logo-white.png')}}"></a>
+                    <p class="font-size-15 mb-35">Hotline: 039 902 0894</p>
+                    <p class="font-size-15 mb-35">Email: theieltsacademyvn@gmail.com</p>
                     <ul class="nav text-white align-items-center mb-20 nav-gap-md nav-no-opacity">
                         <li class="nav-item"><a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="17" fill="none">
                                     <path fill="currentColor" d="M6.318 2.8h1.391V.202A16.842 16.842 0 0 0 5.683.088c-2.006 0-3.38 1.353-3.38 3.837v2.287H.089v2.902h2.214v7.303h2.713V9.114H7.14l.338-2.902H5.016v-2c0-.839.21-1.413 1.302-1.413Z" />
@@ -71,10 +72,10 @@
                     </ul>
                     <p class="font-size-13 text-muted m-0">© 2022 Designed by <a href="https://kalzen.com" target="_blank">Kalzen Media</a></p>
                 </div>
-                <div class="col-2 d-none d-lg-block"></div>
-                <div class="col-12 col-lg-7">
+                <div class="col-1 d-none d-lg-block"></div>
+                <div class="col-12 col-lg-8">
                     <div class="row gy-50">
-                        <div class="col-6 col-md-4">
+                        <div class="col-6 col-md-2">
                             <h6 class="display-6 text-white mb-20">Liên kết</h6>
                             <ul class="nav flex-column text-white nav-opacity nav-gap-sm">
                                 <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
@@ -82,17 +83,18 @@
                                 <li class="nav-item"><a class="nav-link" href="{{ route('contact')}}">Liên hệ</a></li>
                             </ul>
                         </div>
-                        <div class="col-6 col-md-4">
+                        <div class="col-6 col-md-5">
                             <h6 class="display-6 text-white mb-20">Khóa học</h6>
                             <ul class="nav flex-column text-white nav-opacity nav-gap-sm">
-                                <li class="nav-item"><a class="nav-link" href="#">IELTS FOUNDATION</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">FORWARD IELTS</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">IELTS ADVANCED</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">IELTS COACHING</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/khoa-hoc-ielts-foudation">IELTS FOUNDATION</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/khoa-hoc-forward-ielts">FORWARD IELTS</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/khoa-hoc-ielts-advanced">IELTS ADVANCED</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/khoa-hoc-ielts-coaching">IELTS COACHING</a></li>
                             </ul>
                         </div>
-                        <div class="col-6 col-md-4">
+                        <div class="col-6 col-md-5">
                             <h6 class="display-6 text-white mb-20">Fanpage</h6>
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftheieltsacademy.edu&tabs=timeline&width=0&height=0&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=372100597106969" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                         </div>
                     </div>
                 </div>
@@ -120,7 +122,7 @@
     <script src="{{asset('hocvienielts/js/controllers/swiper.js')}}"></script>
     <script src="{{asset('hocvienielts/js/controllers/others.js')}}"></script>
     <script src="{{asset('hocvienielts/js/custom.js')}}"></script>
-    <!-- endbuild -->
+  
 </body>
 
 </html>

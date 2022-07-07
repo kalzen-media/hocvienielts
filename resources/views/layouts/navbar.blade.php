@@ -8,9 +8,9 @@
                 <li class="nav-item navbar-dropdown"><a class="nav-link" href="{{route('about')}}"><span>Giới thiệu</span></a>
                     <div class="dropdown-menu rounded-2 shadow">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="#"><span>Link 01</span></a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"><span>Link 02</span></a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"><span>Link 03</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span>Về TIA</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span>Đội ngũ giảng viên</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span>Cảm nhận học viên</span></a></li>
                         </ul>
                     </div>
                 </li>
@@ -25,8 +25,18 @@
 </div>
                 </li>
                 <li class="nav-item navbar-dropdown"><a class="nav-link" href="#"><span>Tư vấn</span></a>
+                
                 </li>
                 <li class="nav-item navbar-dropdown"><a class="nav-link" href="{{ route('post.category', ['alias' => 'tai-lieu'])}}"><span>Tài liệu</span></a>
+                <div class="dropdown-menu rounded-2 shadow">
+                <ul class="nav navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/tin-tuc/ielts-listening">IELTS LISTENING</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/ielts-reading">IELTS READING</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/ielts-speaking">IELTS SPEAKING</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/ielts-writing">IELTS WRITING</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/chia-se-phuong-phap">Chia sẻ phương pháp</a></li>
+                        </ul>
+</div>
                 </li>
                 <li class="nav-item navbar-dropdown"><a class="nav-link" href="{{ route('post.list')}}"><span>Tin tức</span></a>
                 </li>

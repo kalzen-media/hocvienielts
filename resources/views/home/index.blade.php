@@ -47,11 +47,7 @@
             <div class="col-lg-6">
                 <h3 class="section-title text-left" data-show="startbox" data-show-delay="100">Giới thiệu chung Về The
                     IELTS Academy</h3>
-                <p data-show="startbox" data-show-delay="200">The IELTS Academy – trung tâm luyện thi IELTS uy tín hàng
-                    đầu tại Việt Nam có hơn 7 năm kinh nghiệm trong nghiên cứu và giảng dạy IELTS . Với sứ mệnh định
-                    hình IELTS TƯ DUY 4 CHIỀU cho người học, The IELTS Academy nỗ lực cống hiến sức trẻ, nhiệt huyết
-                    giúp các bạn học IELTS tiếp cận phương pháp giảng dạy mới nhất, hiệu quả nhất, chinh phục mọi mục
-                    tiêu IELTS dễ dàng</p>
+                <p data-show="startbox" data-show-delay="200">The IELTS Academy – trung tâm luyện thi IELTS uy tín hàng đầu tại Việt Nam có hơn 7 năm kinh nghiệm trong nghiên cứu và giảng dạy IELTS . Với sứ mệnh định hình IELTS TƯ DUY 4 CHIỀU cho người học, The IELTS Academy nỗ lực cống hiến sức trẻ, nhiệt huyết giúp các bạn học IELTS tiếp cận phương pháp giảng dạy mới nhất, hiệu quả nhất, chinh phục mọi mục tiêu IELTS dễ dàng.</p>
             </div>
         </div>
     </div>
@@ -176,7 +172,7 @@
 </section>
 <section class="team py-60">
     <div class="container">
-        <h3 class="section-title text-center text-primary">ĐỘI NGŨ CHUYÊN MÔN TRẺ ĐẦY NHIỆT HUYẾT</h3>
+        <h3 class="section-title text-center text-primary">ĐỘI NGŨ CHUYÊN MÔN GIÀU KINH NGHIỆM</h3>
         <div class="row gy-70">
             <!-- Item-->
             <div class="col-12 col-sm-6 col-lg-3 animated" data-show="startbox"
@@ -185,10 +181,9 @@
                 <div class="member "><a class="member-image" href="#" data-img-height=""
                         style="--img-height: 114%;"><img loading="lazy"
                             src="{{asset('hocvienielts/images/team/vu.jpg')}}" alt="team"></a>
-                    <div class="member-body"><a class="member-title h4 text-primary" href="#">Nguyễn Đình Vũ</a>
+                    <div class="member-body"><a class="member-title h4 text-primary" href="#">Mr. Nguyễn Đình Vũ</a>
                         <div class="member-subtitle font-size-15 text-gray-dark">The definition of insanity is doing the
-                            same thing over and over again and expecting different results - Định nghĩa của sự điên rồ
-                            là làm đi làm lại một việc và mong đợi những kết quả khác nhau.</div>
+                            same thing over and over again and expecting different results.</div>
                     </div>
                 </div>
             </div><!-- Item-->
@@ -199,10 +194,7 @@
                         style="--img-height: 114%;"><img loading="lazy"
                             src="{{asset('hocvienielts/images/team/lien.JPG')}}" alt="team"></a>
                     <div class="member-body"><a class="member-title h4 text-primary" href="#">Ms. Phương Liên</a>
-                        <div class="member-subtitle font-size-15 text-gray-dark">We can be truly successful only at
-                            something we're willing to fail at. If we're unwilling to fail, then we're unwilling to
-                            succeed - Chúng ta chỉ có thể thực sự thành công ở điều gì đó mà chúng ta sẵn sàng thất bại.
-                            Nếu chúng ta không muốn thất bại, thì chúng ta không muốn thành công.</div>
+                        <div class="member-subtitle font-size-15 text-gray-dark">We can be truly successful only at something we're willing to fail at. If we're unwilling to fail, then we're unwilling to succeed.</div>
                     </div>
                 </div>
             </div><!-- Item-->
@@ -213,8 +205,7 @@
                         style="--img-height: 114%;"><img loading="lazy"
                             src="{{asset('hocvienielts/images/team/phuong.JPG')}}" alt="team"></a>
                     <div class="member-body"><a class="member-title h4 text-primary" href="#">Ms. Như Phương</a>
-                        <div class="member-subtitle font-size-15 text-gray-dark">You are what you do, not what you say
-                            you will do - Bạn là những gì bạn làm, chứ không phải những gì bạn nói bạn sẽ làm.</div>
+                        <div class="member-subtitle font-size-15 text-gray-dark">You are what you do, not what you say you will do. </div>
                     </div>
                 </div>
             </div><!-- Item-->
@@ -225,8 +216,7 @@
                         style="--img-height: 114%;"><img loading="lazy"
                             src="{{asset('hocvienielts/images/team/van.JPG')}}" alt="team"></a>
                     <div class="member-body"><a class="member-title h4 text-primary" href="#">Ms. Khánh Vân </a>
-                        <div class="member-subtitle font-size-15 text-gray-dark">Practice makes perfect – Trăm hay không
-                            bằng tay làm.</div>
+                        <div class="member-subtitle font-size-15 text-gray-dark">See everything through rose-colored glasses and be happy with the little things in life.</div>
                     </div>
                 </div>
             </div><!-- Item-->
@@ -238,16 +228,17 @@
         <h3 class="section-title text-center text-primary">CÁC KHÓA HỌC Ở THE IELTS ACADEMY</h3>
         <div class="row">
             <div class="col-md-4">
-                <div class="course-item rounded-3 p-20 shadow-sm bg-white active" data-image="{{asset('hocvienielts/video-thumbnail.png')}}" data-url = "/tin-tuc/khoa-hoc-ielts-foudation">
-                    <h6 class="text-primary">IELTS FOUNDATION</h6>
-                    <div class="font-size-15">Khoá học nền tảng bổ sung các kiến thức tiếng Anh học thuật ở cấp độ cơ
-                        bản giúp học viên sẵn sàng học chuyên sâu về IELTS</div>
-                </div>
-                <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20" data-image="{{asset('hocvienielts/img/home-2-slider-2-900x830.jpg')}}" data-url = "/tin-tuc/khoa-hoc-forward-ielts">
+            <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20 active" data-image="{{asset('hocvienielts/img/home-2-slider-2-900x830.jpg')}}" data-url = "/tin-tuc/khoa-hoc-forward-ielts">
                     <h6 class="text-primary">FORWARD IELTS</h6>
                     <div class="font-size-15">– Khoá học tập trung hoàn thiện 4 kỹ năng Nghe – Nói – Đọc – Viết tiếng
                         Anh học thuật ở cấp độ Sơ cấp – Trung cấp </div>
                 </div>
+                <div class="course-item rounded-3 p-20 shadow-sm bg-white" data-image="{{asset('hocvienielts/video-thumbnail.png')}}" data-url = "/tin-tuc/khoa-hoc-ielts-foudation">
+                    <h6 class="text-primary">IELTS FOUNDATION</h6>
+                    <div class="font-size-15">Khoá học nền tảng bổ sung các kiến thức tiếng Anh học thuật ở cấp độ cơ
+                        bản giúp học viên sẵn sàng học chuyên sâu về IELTS</div>
+                </div>
+                
                 <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20" data-image="{{asset('hocvienielts/img/home-2-slider-3-900x830.jpg')}}" data-url = "/tin-tuc/khoa-hoc-ielts-advanced">
                     <h6 class="text-primary">IELTS ADVANCED</h6>
                     <div class="font-size-15">Khoá học chuyên sâu 4 kỹ năng ở mức Cao cấp giúp học viên đạt mục tiêu
