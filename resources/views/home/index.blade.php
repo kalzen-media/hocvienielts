@@ -266,6 +266,7 @@
 <section class="section-contact py-60">
     <div class="container">
         <form class="bg-primary-dark form-contact form-reg" action="{{ route('contact') }}" method="post">
+            @csrf
             <div class="row align-items-center gy-3">
                 <div class="col-lg-3">
                     <h3 class="fs-2 mb-0 text-white">Đăng ký
@@ -277,7 +278,7 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="form-label visually-hidden" for="form-reg-name">Họ và tên</label>
-                                <input class="form-control" id="form-reg-name" name="full_name" type="text"
+                                <input class="form-control" id="form-reg-name" name="name" type="text"
                                     placeholder="Họ và tên">
                             </div>
                         </div>
@@ -285,7 +286,7 @@
                             <div class="form-group">
                                 <label class="form-label visually-hidden" for="form-reg-phonenumber">Số điện
                                     thoại</label>
-                                <input class="form-control" id="form-reg-phonenumber" name="phone" type="text"
+                                <input class="form-control" id="form-reg-phonenumber" name="mobile" type="text"
                                     placeholder="Số điện thoại">
                             </div>
                         </div>
@@ -298,7 +299,7 @@
                         </div>
                         <div class="col-md-4">
                             <label class="form-label visually-hidden" for="form-reg-work">Band điểm mục tiêu?</label>
-                            <select class="form-select form-select-default" id="form-reg-work" name="job">
+                            <select class="form-select form-select-default" id="form-reg-work" name="target">
                                 <option selected="selected" value="0">Band điểm của bạn</option>
                                 <option value="0 - 4.5">0 - 4.5</option>
                                 <option value="5.0 - 5.5">5.0 - 5.5</option>
@@ -308,9 +309,9 @@
                         </div>
                         <div class="col-md-4">
                             <label class="form-label visually-hidden" for="form-reg-address">Nội dung cần tư vấn?</label>
-                            <select class="form-select form-select-default" id="form-reg-address" name="branch_id">
+                            <select class="form-select form-select-default" id="form-reg-address" name="content">
                                 <option selected="selected" value="0">Nội dung bạn cần tư vấn</option>
-                                <option value="Test năng lực0">Test năng lực</option>
+                                <option value="Test năng lực">Test năng lực</option>
                                 <option value="Tư vấn khóa học IELTS">Tư vấn khóa học IELTS</option>
                                 <option value="Đăng ký thi thử IELTS">Đăng ký thi thử IELTS</option>
                                 <option value="Khác">Khác</option>
