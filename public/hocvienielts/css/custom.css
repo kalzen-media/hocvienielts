@@ -155,3 +155,10 @@ section.course .course-item:hover h6,  section.course .course-item.active h6
     background: #1f4320;
     color: #fff;
 }
+a{
+    transition: all 0.2s;
+}
+a:hover
+{
+    opacity: .8;
+}

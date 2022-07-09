@@ -44,6 +44,7 @@
     .course-slide
     {
       margin-top: 20px;
+      height: 500px !important;
     }
     .py-60
     {
@@ -54,5 +55,10 @@
     {
       padding-left: 35px !important; 
       padding-right: 35px !important;
+    }
+    iframe
+    {
+      max-width: 100%;
+      height: 250px;
     }
   }

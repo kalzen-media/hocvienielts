@@ -141,25 +141,18 @@
     <script src="{{asset('hocvienielts/js/controllers/stretch-column.js')}}"></script>
     <script src="{{asset('hocvienielts/js/controllers/swiper.js')}}"></script>
     <script src="{{asset('hocvienielts/js/controllers/others.js')}}"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="{{asset('hocvienielts/js/custom.js')}}"></script>
     @if (session('message'))
-    <div class="toast align-items-center text-white bg-primary border-0 position-fixed bottom-0 end-0" id="message" role="alert"
-        aria-live="assertive" aria-atomic="true">
-        <div class="d-flex">
-            <div class="toast-body">
-            {{ session('message') }}
-            </div>
-            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-                aria-label="Close"></button>
-        </div>
-    </div>
+    
     <script>
         window.onload = (event) => {
-    let myAlert = document.querySelectorAll('.toast')[0];
-    if (myAlert) {
-        let bsAlert = new bootstrap.Toast(myAlert);
-        bsAlert.show();
-    }
+            Swal.fire({
+  title: 'Gửi liên hệ thành công!',
+  text: 'Chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất!',
+  icon: 'success',
+  confirmButtonText: 'OK'
+})
     };
     </script>
     @endif

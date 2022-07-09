@@ -28,7 +28,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="font-weight-semibold">Ảnh bài viết <span class="required"></span></label>
+                            <label class="font-weight-semibold">Ảnh bài viết </label>
                             <input type="file" class="form-control-file" data-key="image" data-fouc>
                             @if(old('image'))
                             <input type="hidden" name="image" value="{{old('image')}}" id="image">
@@ -37,7 +37,7 @@
                             <input type="hidden" name="image" value="{{$record->images->first()->url??''}}" id="image">
                             <img class="mt-2" id="image_preview" height="100" src="{{$record->images->first()->url??''}}"/>
                             @else
-                            <input type="hidden" name="image" value="" id="image">
+                            <input type="hidden" name="image" value="{{asset('hocvienietls/images/no-image.jpg')}}" id="image">
                             <img class="mt-2" id="image_preview" style="display:none;" height="100"/>
                             @endif
                             @error('image')
