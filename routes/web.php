@@ -13,7 +13,7 @@ use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\Admin\SlideController;
 use App\Http\Controllers\Admin\OrderController;
-
+use App\Http\Controllers\Admin\MessageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,7 +29,8 @@ Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/logout', [HomeController::class, 'logout'])->name('logout');
-Route::get('/gioi-thieu', [HomeController::class, 'about'])->name('about');
+Route::get('/tu-van', [HomeController::class, 'advise'])->name('advise');
+Route::any('/gioi-thieu', [HomeController::class, 'about'])->name('about');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::any('/lien-he', [HomeController::class, 'contact'])->name('contact');
 Route::get('/san-pham/{alias}', [App\Http\Controllers\ProductController::class, 'detail'])->name('product.detail');
@@ -60,6 +61,8 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
     Route::resource('attribute', AttributeController::class);
     //Post
     Route::resource('post', PostController::class);
+    //Message
+    Route::resource('message', MessageController::class);
     //Attribute
     Route::resource('attribute', AttributeController::class);
     Route::prefix('post')->name('post.')->group(function () {

@@ -23,7 +23,7 @@
             <div class="row gy-30">
                 <div class="col-12 col-lg-4">
                     <!-- Item-->
-                    <div class="bg-white rounded-4 shadow py-40 px-50" data-show="startbox">
+                    <div class="bg-white rounded-4 shadow py-40 px-30" data-show="startbox">
                         <div class="d-flex">
                             <div class="flex-shrink-0"><svg class="text-accent-1" xmlns="http://www.w3.org/2000/svg"
                                     width="16" height="16" fill="none">
@@ -39,7 +39,7 @@
                 </div>
                 <div class="col-12 col-lg-4">
                     <!-- Item-->
-                    <div class="bg-white rounded-4 shadow py-40 px-50" data-show="startbox" data-show-delay="100">
+                    <div class="bg-white rounded-4 shadow py-40 px-30" data-show="startbox" data-show-delay="100">
                         <div class="d-flex">
                             <div class="flex-shrink-0"><svg class="text-accent-1" xmlns="http://www.w3.org/2000/svg"
                                     width="15" height="17" fill="none">
@@ -56,7 +56,7 @@
                 </div>
                 <div class="col-12 col-lg-4">
                     <!-- Item-->
-                    <div class="bg-white rounded-4 shadow py-40 px-50" data-show="startbox" data-show-delay="200">
+                    <div class="bg-white rounded-4 shadow py-40 px-30" data-show="startbox" data-show-delay="200">
                         <div class="d-flex">
                             <div class="flex-shrink-0"><svg class="text-accent-1" xmlns="http://www.w3.org/2000/svg"
                                     width="16" height="16" fill="none">

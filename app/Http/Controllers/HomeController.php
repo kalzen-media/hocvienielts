@@ -65,4 +65,18 @@ class HomeController extends Controller
         auth()->logout();
         return redirect()->route('login');
     }
+    public function advise()
+    {
+        if (request()->isMethod('post')) {
+            Message::create([
+                'name' => request('name'),
+                'mobile' => request('mobile'),
+                'email' => request('email'),
+                'target' => request('target'),
+                'content' => request('content')
+            ]);
+            return redirect()->back()->with('message', 'Cảm ơn bạn đã liên hệ. Chúng tôi sẽ liên lạc với bạn ngay!');
+        }
+        return view('contact.advise');
+    }
 }
