@@ -32,7 +32,7 @@
                                 </svg></div>
                             <div class="flex-grow-1 ms-15">
                                 <h5 class="m-0">Thông tin liên hệ:</h5>
-                                <p class="m-0 mt-15">Email: theieltsacademyvn@gmail.com <br>Hotline: 039 902 0894</p>
+                                <p class="m-0 mt-15">Hotline: 039 902 0894<br>Email: theieltsacademyvn@gmail.com </p>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                                 </svg></div>
                             <div class="flex-grow-1 ms-15">
                                 <h5 class="m-0">Thời gian hoạt động:</h5>
-                                <p class="m-0 mt-15">Thứ 2 - Chủ nhật <br>8H - 21H30</p>
+                                <p class="m-0 mt-15">Thứ 2 - Chủ nhật <br>8h00 - 21h30</p>
                             </div>
                         </div>
                     </div>
