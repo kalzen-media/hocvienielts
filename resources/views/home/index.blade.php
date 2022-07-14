@@ -13,13 +13,7 @@
                 </div>
                 <div class="swiper-slide h-auto">
                     <a href="#">
-                        <img loading="lazy" src="{{asset('hocvienielts/banner-web-1.png')}}"
-                            data-swiper-parallax-x="20%" alt="">
-                    </a>
-                </div>
-                <div class="swiper-slide h-auto">
-                    <a href="#">
-                        <img loading="lazy" src="{{asset('hocvienielts/banner-3.png')}}"
+                        <img loading="lazy" src="{{asset('hocvienielts/banner-3.jpg')}}"
                             data-swiper-parallax-x="20%" alt="">
                     </a>
                 </div>
