@@ -41,13 +41,16 @@
                     style="border-radius: 20px;">
                     <a class="popup-video" href="https://www.youtube.com/watch?v=qv8RAliQuL8">
                     <img loading="lazy" src="{{asset('hocvienielts/video-thumbnail.png')}}" alt="video">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+   <path fill="#ffffff" d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M10,16.5L16,12L10,7.5V16.5Z" />
+</svg>
 </a>
                 </div>
             </div>
             <div class="col-lg-6">
                 <h3 class="section-title text-left" data-show="startbox" data-show-delay="100">Giới thiệu chung Về The
                     IELTS Academy</h3>
-                <p data-show="startbox" data-show-delay="200">The IELTS Academy – trung tâm luyện thi IELTS uy tín hàng đầu tại Việt Nam có hơn 7 năm kinh nghiệm trong nghiên cứu và giảng dạy IELTS . Với sứ mệnh định hình IELTS TƯ DUY 4 CHIỀU cho người học, The IELTS Academy nỗ lực cống hiến sức trẻ, nhiệt huyết giúp các bạn học IELTS tiếp cận phương pháp giảng dạy mới nhất, hiệu quả nhất, chinh phục mọi mục tiêu IELTS dễ dàng.</p>
+                <p data-show="startbox" data-show-delay="200">The IELTS Academy – trung tâm luyện thi IELTS uy tín hàng đầu tại Việt Nam có hơn 7 năm kinh nghiệm trong nghiên cứu và giảng dạy IELTS. Với sứ mệnh định hình IELTS TƯ DUY 4 CHIỀU cho người học, The IELTS Academy nỗ lực cống hiến sức trẻ, nhiệt huyết giúp các bạn học IELTS tiếp cận phương pháp giảng dạy mới nhất, hiệu quả nhất, chinh phục mọi mục tiêu IELTS dễ dàng.</p>
             </div>
         </div>
     </div>
@@ -60,25 +63,25 @@
             <div class="col-lg-3 col-6" data-show="startbox" data-show-delay="200">
                 <div class="box-info p-20 text-center text-dark">
                     <h5 class="number text-primary">05</h5>
-                    <p class="text">NĂM KIÊN TRÌ ĐÀO TẠO TƯ DUY ĐỔI MỚI</p>
+                    <p class="text">NĂM ĐÀO TẠO</br>TƯ DUY ĐỔI MỚI</p>
                 </div>
             </div>
             <div class="col-lg-3 col-6" data-show="startbox" data-show-delay="300">
                 <div class="box-info p-20 text-center text-dark">
                     <h5 class="number text-primary">99%</h5>
-                    <p class="text">HỌC VIÊN & PHỤ HUYNH HÀI LÒNG</p>
+                    <p class="text">HỌC VIÊN & PHỤ HUYNH</br>HÀI LÒNG</p>
                 </div>
             </div>
             <div class="col-lg-3 col-6" data-show="startbox" data-show-delay="400">
                 <div class="box-info p-20 text-center text-dark">
                     <h5 class="number text-primary">1000+</h5>
-                    <p class="text">HỌC VIÊN ĐƯỢC TRUYỀN CẢM HỨNG</p>
+                    <p class="text">HỌC VIÊN</br>ĐƯỢC TRUYỀN CẢM HỨNG</p>
                 </div>
             </div>
             <div class="col-lg-3 col-6" data-show="startbox" data-show-delay="500">
                 <div class="box-info p-20 text-center text-dark">
                     <h5 class="number text-primary">100%</h5>
-                    <p class="text">HỌC VIÊN MẤT GỐC ĐẠT MỤC TIÊU</p>
+                    <p class="text">HỌC VIÊN</br>MẤT GỐC ĐẠT MỤC TIÊU</p>
                 </div>
             </div>
         </div>

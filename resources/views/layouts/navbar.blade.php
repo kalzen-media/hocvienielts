@@ -24,7 +24,7 @@
                         </ul>
 </div>
                 </li>
-                <li class="nav-item navbar-dropdown"><a class="nav-link" href="#"><span>Tư vấn</span></a>
+                <li class="nav-item navbar-dropdown"><a class="nav-link" href="{{ route('advise')}}"><span>Tư vấn</span></a>
                 
                 </li>
                 <li class="nav-item navbar-dropdown"><a class="nav-link" href="{{ route('post.category', ['alias' => 'tai-lieu'])}}"><span>Tài liệu</span></a>
