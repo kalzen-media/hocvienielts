@@ -17,6 +17,12 @@
                             data-swiper-parallax-x="20%" alt="">
                     </a>
                 </div>
+                <div class="swiper-slide h-auto">
+                    <a href="#">
+                        <img loading="lazy" src="{{asset('hocvienielts/banner-3.png')}}"
+                            data-swiper-parallax-x="20%" alt="">
+                    </a>
+                </div>
             </div>
         </div>
         <div class="swiper-button-prev swiper-button-position-3 swiper-button-opacity shadow"><svg
