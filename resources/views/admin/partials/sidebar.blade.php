@@ -116,6 +116,14 @@
                         </span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{route('admin.testimonial.index')}}" class="nav-link">
+                        <i class="icon-lasso2"></i>
+                        <span>
+                            Quản lý phản hồi
+                        </span>
+                    </a>
+                </li>
             </ul>
         </div>
         <!-- /main navigation -->
