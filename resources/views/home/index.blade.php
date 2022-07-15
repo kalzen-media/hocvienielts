@@ -7,14 +7,14 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide h-auto">
                     <a href="#">
-                        <img loading="lazy" src="{{asset('hocvienielts/banner-2.jpg')}}"
-                            data-swiper-parallax-x="20%" alt="">
+                        <img loading="lazy" src="{{asset('hocvienielts/banner-2.jpg')}}" data-swiper-parallax-x="20%"
+                            alt="">
                     </a>
                 </div>
                 <div class="swiper-slide h-auto">
                     <a href="#">
-                        <img loading="lazy" src="{{asset('hocvienielts/banner-3.jpg')}}"
-                            data-swiper-parallax-x="20%" alt="">
+                        <img loading="lazy" src="{{asset('hocvienielts/banner-3.jpg')}}" data-swiper-parallax-x="20%"
+                            alt="">
                     </a>
                 </div>
             </div>
@@ -37,20 +37,25 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <div class="background-image w-100 h-100 position-relative overflow-hidden popup-youtube" data-show="startbox"
-                    style="border-radius: 20px;">
+                <div class="background-image w-100 h-100 position-relative overflow-hidden popup-youtube"
+                    data-show="startbox" style="border-radius: 20px;">
                     <a class="popup-video" href="https://www.youtube.com/watch?v=qv8RAliQuL8">
-                    <img loading="lazy" src="{{asset('hocvienielts/video-thumbnail.png')}}" alt="video">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-   <path fill="#ffffff" d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M10,16.5L16,12L10,7.5V16.5Z" />
-</svg>
-</a>
+                        <img loading="lazy" src="{{asset('hocvienielts/video-thumbnail.png')}}" alt="video">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="#ffffff"
+                                d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M10,16.5L16,12L10,7.5V16.5Z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div class="col-lg-6">
                 <h3 class="section-title text-left" data-show="startbox" data-show-delay="100">Giới thiệu chung Về The
                     IELTS Academy</h3>
-                <p data-show="startbox" data-show-delay="200">The IELTS Academy – trung tâm luyện thi IELTS uy tín hàng đầu tại Việt Nam có hơn 7 năm kinh nghiệm trong nghiên cứu và giảng dạy IELTS. Với sứ mệnh định hình IELTS TƯ DUY 4 CHIỀU cho người học, The IELTS Academy nỗ lực cống hiến sức trẻ, nhiệt huyết giúp các bạn học IELTS tiếp cận phương pháp giảng dạy mới nhất, hiệu quả nhất, chinh phục mọi mục tiêu IELTS dễ dàng.</p>
+                <p data-show="startbox" data-show-delay="200">The IELTS Academy – trung tâm luyện thi IELTS uy tín hàng
+                    đầu tại Việt Nam có hơn 7 năm kinh nghiệm trong nghiên cứu và giảng dạy IELTS. Với sứ mệnh định hình
+                    IELTS TƯ DUY 4 CHIỀU cho người học, The IELTS Academy nỗ lực cống hiến sức trẻ, nhiệt huyết giúp các
+                    bạn học IELTS tiếp cận phương pháp giảng dạy mới nhất, hiệu quả nhất, chinh phục mọi mục tiêu IELTS
+                    dễ dàng.</p>
             </div>
         </div>
     </div>
@@ -96,62 +101,26 @@
                 <div class="swiper" data-swiper-slides="1">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                            <div class="text-center d-block d-sm-none mb-10"><img class="rounded-circle"
-                                            loading="lazy" src="{{asset('hocvienielts/testimonial-example.png')}}"
-                                            alt="hocvien" height="150" width="150"> </div>
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0 d-none d-xl-block me-40"><img class="rounded-circle"
-                                            loading="lazy" src="{{asset('hocvienielts/testimonial-example.png')}}"
-                                            alt="" height="250" width="250">
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        <div class="fw-bold text-primary font-size-18">BẢO HƯNG – IELTS OVERALL 8.0
-                                        </div>
-                                        <div class="font-size-15 text-dark">Trường THPT chuyên Trần Phú</div>
-                                        <div class="font-size-15 text-dark mt-40">“Mình có pha quay xe ngoạn mục để nâng
-                                            tầm đạt 8.0
-                                            Overall và bất ngờ đạt 7.5 Writing, tất cả là nhờ học Tư duy 4 chiều và Giá
-                                            trị văn học
-                                            trong triển khai bài viết của thầy Vũ. Ban đầu, những kiến thức ấy thực sự
-                                            mình cũng không
-                                            tin tưởng sẽ giúp ích được gì vì chưa nghe đến bao giờ nhưng thật không ngờ
-                                            đó là một kho
-                                            báu có giá trị lớn đến vậy. Mình đoán chắc chỉ có thầy Vũ mới nghĩ ra được
-                                            phương pháp học
-                                            IELTS dựa trên kiến thức của ngành Khoa học máy tính độc đáo đến như vậy”.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @foreach ($testimonials as $testimonial)
                             <div class="swiper-slide">
                                 <div class="text-center d-block d-sm-none mb-10"><img class="rounded-circle"
-                                            loading="lazy" src="{{asset('hocvienielts/testimonial-example.png')}}"
-                                            alt="hocvien" height="150" width="150"> </div>
+                                        loading="lazy" src="{{ $testimonial->image }}"
+                                        alt="hocvien" height="150" width="150"> </div>
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0 d-none d-xl-block me-40"><img class="rounded-circle"
-                                            loading="lazy" src="{{asset('hocvienielts/testimonial-example.png')}}"
+                                            loading="lazy" src="{{ $testimonial->image }}"
                                             alt="" height="250" width="250">
                                     </div>
                                     <div class="flex-grow-1">
-                                        <div class="fw-bold text-primary font-size-18">BẢO HƯNG – IELTS OVERALL 8.0
+                                        <div class="fw-bold text-primary font-size-18">{{ $testimonial->name }}
                                         </div>
-                                        <div class="font-size-15 text-dark">Trường THPT chuyên Trần Phú</div>
-                                        <div class="font-size-15 text-dark mt-40">“Mình có pha quay xe ngoạn mục để nâng
-                                            tầm đạt 8.0
-                                            Overall và bất ngờ đạt 7.5 Writing, tất cả là nhờ học Tư duy 4 chiều và Giá
-                                            trị văn học
-                                            trong triển khai bài viết của thầy Vũ. Ban đầu, những kiến thức ấy thực sự
-                                            mình cũng không
-                                            tin tưởng sẽ giúp ích được gì vì chưa nghe đến bao giờ nhưng thật không ngờ
-                                            đó là một kho
-                                            báu có giá trị lớn đến vậy. Mình đoán chắc chỉ có thầy Vũ mới nghĩ ra được
-                                            phương pháp học
-                                            IELTS dựa trên kiến thức của ngành Khoa học máy tính độc đáo đến như vậy”.
+                                        <div class="font-size-15 text-dark">{{ $testimonial->address }}</div>
+                                        <div class="font-size-15 text-dark mt-40">{!! $testimonial->content !!}
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            @endforeach
                         </div>
                     </div>
                     <div class="navigation-holder-1">
@@ -197,7 +166,9 @@
                         style="--img-height: 114%;"><img loading="lazy"
                             src="{{asset('hocvienielts/images/team/lien.JPG')}}" alt="team"></a>
                     <div class="member-body"><a class="member-title h4 text-primary" href="#">Ms. Phương Liên</a>
-                        <div class="member-subtitle font-size-15 text-gray-dark">We can be truly successful only at something we're willing to fail at. If we're unwilling to fail, then we're unwilling to succeed.</div>
+                        <div class="member-subtitle font-size-15 text-gray-dark">We can be truly successful only at
+                            something we're willing to fail at. If we're unwilling to fail, then we're unwilling to
+                            succeed.</div>
                     </div>
                 </div>
             </div><!-- Item-->
@@ -208,7 +179,8 @@
                         style="--img-height: 114%;"><img loading="lazy"
                             src="{{asset('hocvienielts/images/team/phuong.JPG')}}" alt="team"></a>
                     <div class="member-body"><a class="member-title h4 text-primary" href="#">Ms. Như Phương</a>
-                        <div class="member-subtitle font-size-15 text-gray-dark">You are what you do, not what you say you will do. </div>
+                        <div class="member-subtitle font-size-15 text-gray-dark">You are what you do, not what you say
+                            you will do. </div>
                     </div>
                 </div>
             </div><!-- Item-->
@@ -219,7 +191,8 @@
                         style="--img-height: 114%;"><img loading="lazy"
                             src="{{asset('hocvienielts/images/team/van.JPG')}}" alt="team"></a>
                     <div class="member-body"><a class="member-title h4 text-primary" href="#">Ms. Khánh Vân </a>
-                        <div class="member-subtitle font-size-15 text-gray-dark">See everything through rose-colored glasses and be happy with the little things in life.</div>
+                        <div class="member-subtitle font-size-15 text-gray-dark">See everything through rose-colored
+                            glasses and be happy with the little things in life.</div>
                     </div>
                 </div>
             </div><!-- Item-->
@@ -231,23 +204,30 @@
         <h3 class="section-title text-center text-primary">CÁC KHÓA HỌC Ở THE IELTS ACADEMY</h3>
         <div class="row">
             <div class="col-md-4">
-            <div class="course-item rounded-3 p-20 shadow-sm bg-white active" data-image="{{asset('hocvienielts/images/khoa-1.JPG')}}" data-url = "/tin-tuc/khoa-hoc-forward-ielts">
+                <div class="course-item rounded-3 p-20 shadow-sm bg-white active"
+                    data-image="{{asset('hocvienielts/images/khoa-1.JPG')}}" data-url="/tin-tuc/khoa-hoc-forward-ielts">
                     <h6 class="text-primary">FORWARD IELTS</h6>
                     <div class="font-size-15">– Khoá học tập trung hoàn thiện 4 kỹ năng Nghe – Nói – Đọc – Viết tiếng
                         Anh học thuật ở cấp độ Sơ cấp – Trung cấp </div>
                 </div>
-                <div class="course-item rounded-3 p-20 shadow-sm mt-20 bg-white" data-image="{{asset('hocvienielts/video-thumbnail.png')}}" data-url = "/tin-tuc/khoa-hoc-ielts-foudation">
+                <div class="course-item rounded-3 p-20 shadow-sm mt-20 bg-white"
+                    data-image="{{asset('hocvienielts/video-thumbnail.png')}}"
+                    data-url="/tin-tuc/khoa-hoc-ielts-foudation">
                     <h6 class="text-primary">IELTS FOUNDATION</h6>
                     <div class="font-size-15">Khoá học nền tảng bổ sung các kiến thức tiếng Anh học thuật ở cấp độ cơ
                         bản giúp học viên sẵn sàng học chuyên sâu về IELTS</div>
                 </div>
-                
-                <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20" data-image="{{asset('hocvienielts/images/khoa-2.JPG')}}" data-url = "/tin-tuc/khoa-hoc-ielts-advanced">
+
+                <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20"
+                    data-image="{{asset('hocvienielts/images/khoa-2.JPG')}}"
+                    data-url="/tin-tuc/khoa-hoc-ielts-advanced">
                     <h6 class="text-primary">IELTS ADVANCED</h6>
                     <div class="font-size-15">Khoá học chuyên sâu 4 kỹ năng ở mức Cao cấp giúp học viên đạt mục tiêu
                         Overall 7.0+ </div>
                 </div>
-                <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20" data-image="{{asset('hocvienielts/images/khoa-3.JPG')}}" data-url = "/tin-tuc/khoa-hoc-ielts-coaching">
+                <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20"
+                    data-image="{{asset('hocvienielts/images/khoa-3.JPG')}}"
+                    data-url="/tin-tuc/khoa-hoc-ielts-coaching">
                     <h6 class="text-primary">IELTS COACHING</h6>
                     <div class="font-size-15">Khoá học với mô hình 1-1, 1-2, 1-3 giúp học viên bổ sung cấp tốc trong
                         thời gian ngắn</div>
@@ -255,10 +235,12 @@
             </div>
             <div class="col-md-8">
                 <div class="course-slide h-100">
-                    <div class="card bg-dark text-white h-100" id="bg-course" style="background-image: url({{asset('hocvienielts/images/khoa-1.JPG')}})">
-                        
+                    <div class="card bg-dark text-white h-100" id="bg-course"
+                        style="background-image: url({{asset('hocvienielts/images/khoa-1.JPG')}})">
+
                         <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
-                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-foudation" class="btn btn-outline">Xem chi tiết khóa học</a>
+                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-foudation" class="btn btn-outline">Xem chi
+                                tiết khóa học</a>
                         </div>
                     </div>
                 </div>
@@ -311,7 +293,8 @@
                             </select>
                         </div>
                         <div class="col-md-4">
-                            <label class="form-label visually-hidden" for="form-reg-address">Nội dung cần tư vấn?</label>
+                            <label class="form-label visually-hidden" for="form-reg-address">Nội dung cần tư
+                                vấn?</label>
                             <select class="form-select form-select-default" id="form-reg-address" name="content">
                                 <option selected="selected" value="0">Nội dung bạn cần tư vấn</option>
                                 <option value="Test năng lực">Test năng lực</option>

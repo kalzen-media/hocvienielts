@@ -14,6 +14,7 @@ use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\Admin\SlideController;
 use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\MessageController;
+use App\Http\Controllers\Admin\TestimonialController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -63,6 +64,8 @@ Route::middleware(['auth'])->name('admin.')->prefix('admin')->group(function () 
     Route::resource('post', PostController::class);
     //Message
     Route::resource('message', MessageController::class);
+    //Testimonial
+    Route::resource('testimonial', TestimonialController::class);
     //Attribute
     Route::resource('attribute', AttributeController::class);
     Route::prefix('post')->name('post.')->group(function () {
