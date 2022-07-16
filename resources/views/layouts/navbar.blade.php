@@ -8,7 +8,7 @@
                 <li class="nav-item navbar-dropdown"><a class="nav-link" href="{{route('about')}}"><span>Giới thiệu</span></a>
                     <div class="dropdown-menu rounded-2 shadow">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="/doi-loi-tam-su-ve-the-ielts-academy"><span>Về TIA</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="/tin-tuc/doi-loi-tam-su-ve-the-ielts-academy"><span>Về TIA</span></a></li>
                             <li class="nav-item"><a class="nav-link" href="#"><span>Đội ngũ giảng viên</span></a></li>
                             <li class="nav-item"><a class="nav-link" href="#"><span>Cảm nhận học viên</span></a></li>
                         </ul>
