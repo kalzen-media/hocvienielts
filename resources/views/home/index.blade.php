@@ -257,8 +257,8 @@
                 </div>
             </div>
             <div class="col-md-8">
-                <div class="course-slide h-100">
-                    <div class="card bg-dark text-white h-100 d-none d-lg-block" id="bg-course"
+                <div class="course-slide h-100 d-none d-lg-block">
+                    <div class="card bg-dark text-white h-100 " id="bg-course"
                         style="background-image: url({{asset('hocvienielts/images/khoa-1.JPG')}})">
 
                         <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
