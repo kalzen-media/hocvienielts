@@ -204,11 +204,23 @@
         <h3 class="section-title text-center text-primary">CÁC KHÓA HỌC Ở THE IELTS ACADEMY</h3>
         <div class="row">
             <div class="col-md-4">
+                <div class="card bg-dark text-white d-lg-none d-md-block d-xl-none" style="background-image: url({{asset('hocvienielts/images/khoa-1.JPG')}}); height: 300px; background-size:cover;">
+                    <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
+                            <a id="course-url" href="/tin-tuc/khoa-hoc-forward-ielts" class="btn btn-outline">Xem chi
+                                tiết khóa học</a>
+                        </div>
+                </div>
                 <div class="course-item rounded-3 p-20 shadow-sm bg-white active"
                     data-image="{{asset('hocvienielts/images/khoa-1.JPG')}}" data-url="/tin-tuc/khoa-hoc-forward-ielts">
                     <h6 class="text-primary">FORWARD IELTS</h6>
                     <div class="font-size-15">– Khoá học tập trung hoàn thiện 4 kỹ năng Nghe – Nói – Đọc – Viết tiếng
                         Anh học thuật ở cấp độ Sơ cấp – Trung cấp </div>
+                </div>
+                <div class="card bg-dark text-white d-lg-none d-md-block d-xl-none" style="background-image: url({{asset('hocvienielts/video-thumbnail.png')}}); height: 300px; background-size:cover; margin-top: 20px; margin-bottom: -20px;">
+                    <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
+                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-foudation" class="btn btn-outline">Xem chi
+                                tiết khóa học</a>
+                        </div>
                 </div>
                 <div class="course-item rounded-3 p-20 shadow-sm mt-20 bg-white"
                     data-image="{{asset('hocvienielts/video-thumbnail.png')}}"
@@ -217,13 +229,24 @@
                     <div class="font-size-15">Khoá học nền tảng bổ sung các kiến thức tiếng Anh học thuật ở cấp độ cơ
                         bản giúp học viên sẵn sàng học chuyên sâu về IELTS</div>
                 </div>
-
+                <div class="card bg-dark text-white d-lg-none d-md-block d-xl-none" style="background-image: url({{asset('hocvienielts/images/khoa-2.JPG')}}); height: 300px; background-size:cover; margin-top: 20px; margin-bottom: -20px;">
+                    <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
+                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-advanced" class="btn btn-outline">Xem chi
+                                tiết khóa học</a>
+                        </div>
+                </div>
                 <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20"
                     data-image="{{asset('hocvienielts/images/khoa-2.JPG')}}"
                     data-url="/tin-tuc/khoa-hoc-ielts-advanced">
                     <h6 class="text-primary">IELTS ADVANCED</h6>
                     <div class="font-size-15">Khoá học chuyên sâu 4 kỹ năng ở mức Cao cấp giúp học viên đạt mục tiêu
                         Overall 7.0+ </div>
+                </div>
+                <div class="card bg-dark text-white d-lg-none d-md-block d-xl-none" style="background-image: url({{asset('hocvienielts/images/khoa-3.JPG')}}); height: 300px; background-size:cover; margin-top: 20px; margin-bottom: -20px;">
+                    <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
+                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-coaching" class="btn btn-outline">Xem chi
+                                tiết khóa học</a>
+                        </div>
                 </div>
                 <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20"
                     data-image="{{asset('hocvienielts/images/khoa-3.JPG')}}"
@@ -235,7 +258,7 @@
             </div>
             <div class="col-md-8">
                 <div class="course-slide h-100">
-                    <div class="card bg-dark text-white h-100" id="bg-course"
+                    <div class="card bg-dark text-white h-100 d-none d-lg-block" id="bg-course"
                         style="background-image: url({{asset('hocvienielts/images/khoa-1.JPG')}})">
 
                         <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
