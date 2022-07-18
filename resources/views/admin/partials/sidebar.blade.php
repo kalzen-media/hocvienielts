@@ -81,7 +81,7 @@
                         <li class="nav-item"><a href="{{route('admin.category.index')}}" class="nav-link">Chuyên mục</a></li>
                     </ul>
                 </li>
-                <li class="nav-item nav-item-submenu">
+               <!-- <li class="nav-item nav-item-submenu">
                     <a href="javascript:;" class="nav-link"><i class="icon-bag"></i> <span>Sản phẩm</span></a>
 
                     <ul class="nav nav-group-sub" data-submenu-title="Sản phẩm">
@@ -91,7 +91,7 @@
                         <li class="nav-item"><a href="{{route('admin.order.index')}}" class="nav-link">Đơn hàng ({{$shared_orders_count}})</a></li>
                         <li class="nav-item"><a href="{{route('admin.catalogue.index')}}" class="nav-link">Danh mục</a></li>
                     </ul>
-                </li>
+                </li> -->
                 <li class="nav-item nav-item-submenu">
                     <a href="javascript:;" class="nav-link"><i class="icon-users"></i> <span>Thành viên</span></a>
 
