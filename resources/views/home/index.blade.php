@@ -39,8 +39,8 @@
             <div class="col-lg-6">
                 <div class="background-image w-100 h-100 position-relative overflow-hidden popup-youtube"
                     data-show="startbox" style="border-radius: 20px;">
-                    <a class="popup-video" href="https://www.youtube.com/watch?v=qv8RAliQuL8">
-                        <img loading="lazy" src="{{asset('hocvienielts/video-thumbnail.png')}}" alt="video">
+                    <a class="popup-video" href="{{  $shared_config['about_video']->value }}">
+                        <img loading="lazy" src="{{  $shared_config['about_image']->value }}" alt="video">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path fill="#ffffff"
                                 d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M10,16.5L16,12L10,7.5V16.5Z" />
@@ -49,13 +49,8 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <h3 class="section-title text-left" data-show="startbox" data-show-delay="100">Giới thiệu chung Về The
-                    IELTS Academy</h3>
-                <p data-show="startbox" data-show-delay="200">The IELTS Academy – trung tâm luyện thi IELTS uy tín hàng
-                    đầu tại Việt Nam có hơn 7 năm kinh nghiệm trong nghiên cứu và giảng dạy IELTS. Với sứ mệnh định hình
-                    IELTS TƯ DUY 4 CHIỀU cho người học, The IELTS Academy nỗ lực cống hiến sức trẻ, nhiệt huyết giúp các
-                    bạn học IELTS tiếp cận phương pháp giảng dạy mới nhất, hiệu quả nhất, chinh phục mọi mục tiêu IELTS
-                    dễ dàng.</p>
+                <h3 class="section-title text-left" data-show="startbox" data-show-delay="100">{{  $shared_config['about_title']->value }}</h3>
+                {!!  $shared_config['about_content']->value !!}
             </div>
         </div>
     </div>
@@ -206,7 +201,7 @@
             <div class="col-md-4">
                 <div class="card bg-dark text-white d-lg-none d-md-block d-xl-none" style="background-image: url({{asset('hocvienielts/images/khoa-1.JPG')}}); height: 300px; background-size:cover;">
                     <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
-                            <a id="course-url" href="/tin-tuc/khoa-hoc-forward-ielts" class="btn btn-outline">Xem chi
+                            <a id="course-url" href="/tin-tuc/khoa-hoc-forward-ielts" class="btn btn-primary">Xem chi
                                 tiết khóa học</a>
                         </div>
                 </div>
@@ -218,7 +213,7 @@
                 </div>
                 <div class="card bg-dark text-white d-lg-none d-md-block d-xl-none" style="background-image: url({{asset('hocvienielts/video-thumbnail.png')}}); height: 300px; background-size:cover; margin-top: 20px; margin-bottom: -20px;">
                     <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
-                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-foudation" class="btn btn-outline">Xem chi
+                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-foudation" class="btn btn-primary">Xem chi
                                 tiết khóa học</a>
                         </div>
                 </div>
@@ -231,7 +226,7 @@
                 </div>
                 <div class="card bg-dark text-white d-lg-none d-md-block d-xl-none" style="background-image: url({{asset('hocvienielts/images/khoa-2.JPG')}}); height: 300px; background-size:cover; margin-top: 20px; margin-bottom: -20px;">
                     <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
-                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-advanced" class="btn btn-outline">Xem chi
+                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-advanced" class="btn btn-primary">Xem chi
                                 tiết khóa học</a>
                         </div>
                 </div>
@@ -244,7 +239,7 @@
                 </div>
                 <div class="card bg-dark text-white d-lg-none d-md-block d-xl-none" style="background-image: url({{asset('hocvienielts/images/khoa-3.JPG')}}); height: 300px; background-size:cover; margin-top: 20px; margin-bottom: -20px;">
                     <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
-                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-coaching" class="btn btn-outline">Xem chi
+                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-coaching" class="btn btn-primary">Xem chi
                                 tiết khóa học</a>
                         </div>
                 </div>
@@ -262,7 +257,7 @@
                         style="background-image: url({{asset('hocvienielts/images/khoa-1.JPG')}})">
 
                         <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
-                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-foudation" class="btn btn-outline">Xem chi
+                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-foudation" class="btn btn-primary">Xem chi
                                 tiết khóa học</a>
                         </div>
                     </div>

@@ -107,8 +107,10 @@ class TestimonialController extends Controller
      * @param  \App\Models\Testimonial  $testimonial
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Testimonial $testimonial)
+    public function destroy($id)
     {
-        //
+        Testimonial::find($id)->delete();
+        return response()->json(['success'=>true,'message'=>'Xóa thành công']);
     }
+    
 }

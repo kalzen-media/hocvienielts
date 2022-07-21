@@ -10,16 +10,10 @@
 @stop
 @section('content')
 <div class="content-wrap ">
-    <div class="pt-190 pb-130 bg-linear-gradient shape-parent">
+    <div class="pt-190 pb-130 bg-contact" style="background-image: url({{ asset('hocvienielts/bg-contact.jpg') }})">
         <!-- Shape-->
-        <div class="shape justify-content-end"><img loading="lazy"
-                src="{{ asset('hocvienielts/img/root/contact-2-shape-547x414.png')}}" alt="partial" width="547"
-                height="414"></div><!-- Shape-->
-        <div class="shape align-items-end justify-content-start"><img loading="lazy"
-                src="{{ asset('hocvienielts/img/root/contact-2-shape-558x364.png')}}" alt="partial" width="558"
-                height="364"></div>
         <div class="container">
-            <h1 class="m-0 text-center mb-100" data-show="startbox">Liên hệ với The Ielts Academy</h1>
+            <h1 class="m-0 text-center mb-100" data-show="startbox">{{  $shared_config['contact_title']->value }}</h1>
             <div class="row gy-30">
                 <div class="col-12 col-lg-4">
                     <!-- Item-->
@@ -32,7 +26,7 @@
                                 </svg></div>
                             <div class="flex-grow-1 ms-15">
                                 <h5 class="m-0">Thông tin liên hệ:</h5>
-                                <p class="m-0 mt-15">Hotline: 039 902 0894<br>Email: theieltsacademyvn@gmail.com </p>
+                                <p class="m-0 mt-15">Hotline: {{  $shared_config['hotline']->value }}<br>Email: {{  $shared_config['email']->value }} </p>
                             </div>
                         </div>
                     </div>

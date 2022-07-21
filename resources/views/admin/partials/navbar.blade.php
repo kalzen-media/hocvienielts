@@ -1,8 +1,8 @@
 <!-- Main navbar -->
-<div class="navbar navbar-expand-md navbar-dark bg-indigo navbar-static">
+<div class="navbar navbar-expand-md navbar-dark bg-brand navbar-static">
     <div class="navbar-brand">
         <a href="/admin" class="d-inline-block">
-            <img src="/global_assets/images/logo_light.png" alt="">
+            <img src="{{asset('hocvienielts/images/logo-white.png')}}" alt="">
         </a>
     </div>
 

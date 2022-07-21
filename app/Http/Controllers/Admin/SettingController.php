@@ -31,6 +31,30 @@ class SettingController extends Controller
             if ($request->email) {
                 Config::where('name','email')->update(['value'=>$request->email]);
             }
+            if ($request->image) {
+                Config::where('name','about_title')->update(['value'=>$request->about_title]);
+            }
+            if ($request->hotline) {
+                Config::where('name','about_content')->update(['value'=>$request->about_content]);
+            }
+            if ($request->address) {
+                Config::where('name','about_image')->update(['value'=>$request->about_image]);
+            }
+            if ($request->email) {
+                Config::where('name','about_video')->update(['value'=>$request->about_video]);
+            }
+            if ($request->image) {
+                Config::where('name','contact_title')->update(['value'=>$request->contact_title]);
+            }
+            if ($request->hotline) {
+                Config::where('name','facebook')->update(['value'=>$request->facebook]);
+            }
+            if ($request->address) {
+                Config::where('name','instagram')->update(['value'=>$request->instagram]);
+            }
+            if ($request->email) {
+                Config::where('name','youtube')->update(['value'=>$request->youtube]);
+            }
             DB::commit();
             return redirect()->route('admin.setting.index')->with('message', 'Cập nhật thành công');
         }catch(Exception $ex) {

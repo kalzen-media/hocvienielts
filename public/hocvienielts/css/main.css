@@ -43191,7 +43191,7 @@ hr,
 blockquote,
 .blockquote {
   font-size: 1.25em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /* CODE
@@ -43215,7 +43215,6 @@ code:not([class]) {
   left: 0;
   width: 100%;
   height: 100%;
-  font-family: "object-fit: cover";
   -o-object-fit: cover;
      object-fit: cover;
 }

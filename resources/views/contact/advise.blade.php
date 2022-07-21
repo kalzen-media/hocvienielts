@@ -10,14 +10,8 @@
 @stop
 @section('content')
 <div class="content-wrap ">
-    <div class="pt-190 pb-130 bg-linear-gradient shape-parent">
+    <div class="pt-190 pb-130 bg-contact" style="background-image: url({{ asset('hocvienielts/bg-contact.jpg') }})">
         <!-- Shape-->
-        <div class="shape justify-content-end"><img loading="lazy"
-                src="{{ asset('hocvienielts/img/root/contact-2-shape-547x414.png')}}" alt="partial" width="547"
-                height="414"></div><!-- Shape-->
-        <div class="shape align-items-end justify-content-start"><img loading="lazy"
-                src="{{ asset('hocvienielts/img/root/contact-2-shape-558x364.png')}}" alt="partial" width="558"
-                height="364"></div>
         <div class="container">
             <h1 class="m-0 text-center mb-100" data-show="startbox">Để lại thông tin để nhận tư vấn</h1>
 
