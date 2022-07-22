@@ -14,7 +14,7 @@
             <div class="row pt-60 pb-60">
                 <div class="col-12 col-lg-8 blog-detail">
                     <div class="subtitle mb-15 font-size-15 fw-medium text-gray-dark">{{$post->categories->first()->name}} <span class="sep-dot"></span> {{date('d/m/Y',strtotime($post->updated_at))}}</div>
-                    <h1 class="m-0">{{$post->title}}</h1>
+                    <h1 class="mb-20">{{$post->title}}</h1>
 				{!!$post->content!!}
                </div>
 			   <div class="col-lg-4">
