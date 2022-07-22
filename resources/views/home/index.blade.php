@@ -5,18 +5,14 @@
         <div class="swiper-pagination text-white position-absolute mb-30 start-0 w-100 d-none d-lg-block"></div>
         <div class="swiper-container">
             <div class="swiper-wrapper">
+            @foreach($slides as $slide)
                 <div class="swiper-slide h-auto">
-                    <a href="#">
-                        <img loading="lazy" src="{{asset('hocvienielts/banner-2.jpg')}}" data-swiper-parallax-x="20%"
-                            alt="">
+                    <a href="{{$slide->url}}">
+                        <img loading="lazy" src="{{ $slide->image}}" data-swiper-parallax-x="20%"
+                            alt="{{ $slide->name}}">
                     </a>
                 </div>
-                <div class="swiper-slide h-auto">
-                    <a href="#">
-                        <img loading="lazy" src="{{asset('hocvienielts/banner-3.jpg')}}" data-swiper-parallax-x="20%"
-                            alt="">
-                    </a>
-                </div>
+            @endforeach
             </div>
         </div>
         <div class="swiper-button-prev swiper-button-position-3 swiper-button-opacity shadow"><svg
@@ -257,7 +253,7 @@
                         style="background-image: url({{asset('hocvienielts/images/khoa-1.JPG')}})">
 
                         <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
-                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-foudation" class="btn btn-primary">Xem chi
+                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-foudation" class="btn btn-outline">Xem chi
                                 tiết khóa học</a>
                         </div>
                     </div>

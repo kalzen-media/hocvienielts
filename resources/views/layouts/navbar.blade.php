@@ -9,7 +9,7 @@
                 <li class="nav-item navbar-dropdown"><a class="nav-link" href="{{route('index')}}"><span>Trang
                             chủ</span></a>
                 </li>
-                <li class="nav-item navbar-dropdown"><a class="nav-link" href="#"><span>Giới thiệu</span></a>
+                <li class="nav-item navbar-dropdown"><a class="nav-link" href="/tin-tuc/doi-loi-tam-su-ve-the-ielts-academy"><span>Giới thiệu</span></a>
                     <div class="dropdown-menu rounded-2 shadow">
                         <ul class="nav navbar-nav">
                             <li class="nav-item"><a class="nav-link"
@@ -50,7 +50,7 @@
                             </li>
                             <li class="nav-item"><a class="nav-link" href="/tin-tuc/ielts-writing">IELTS WRITING</a>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="/tin-tuc/chia-se-phuong-phap">Chia sẻ phương
+                            <li class="nav-item"><a class="nav-link" href="{{ route('post.category', ['alias' => 'chia-se-phuong-phap'])}}">Chia sẻ phương
                                     pháp</a></li>
                         </ul>
                     </div>
