@@ -253,7 +253,7 @@
                         style="background-image: url({{asset('hocvienielts/images/khoa-1.JPG')}})">
 
                         <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
-                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-foudation" class="btn btn-outline">Xem chi
+                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-foudation" class="btn btn-primary border-0" style="display:inline-flex">Xem chi
                                 tiết khóa học</a>
                         </div>
                     </div>

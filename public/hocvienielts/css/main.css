@@ -6213,12 +6213,11 @@ textarea.form-control-lg {
   opacity: 0.65;
 }
 
-.btn-primary {
   .btn-primary {
     color: #fff;
     background-color: #387539;
     border-color: #255225;
-}
+
 }
 .btn-primary:hover {
   color: #fff;

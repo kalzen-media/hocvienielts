@@ -28,9 +28,13 @@ class PostController extends Controller
     {
         $categories = Category::orderBy('name','asc')->get();
         $category = Category::where('slug',$alias)->firstOrFail();
+        if ($category->parent_id != '0')
+        {
+            $category_parent = Category::find($category->parent_id);
+        }
         $posts = $category->posts()->active()->paginate();
         $featured_posts = Post::active()->orderBy('id','desc')->paginate();
-        return view('post.index',compact('category','posts','categories','featured_posts'));
+        return view('post.index',compact('category','posts','categories','featured_posts', 'category_parent'));
     }
     public function search()
     {
