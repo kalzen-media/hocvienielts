@@ -20,7 +20,7 @@ class PostController extends Controller
     {
         $post = Post::active()->where('slug',$alias)->firstOrFail();
         DB::table('posts')->where('id',$post->id)->increment('viewed');
-        $categories = Category::orderBy('name','asc')->get();
+        $categories = Category::orderBy('name','asc')->whereNull('parent_id')->get();
         $most_view = Post::active()->orderBy('id','desc')->limit(5)->get();
         return view('post.detail',compact('post', 'categories', 'most_view'));
     }
