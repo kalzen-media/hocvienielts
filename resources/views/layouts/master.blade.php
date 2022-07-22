@@ -57,8 +57,8 @@
             <div class="row gy-50">
                 <div class="col-12 col-lg-3"><a class="d-block mb-30" href="{{ route('index')}}"><img
                             src="{{ asset('hocvienielts/images/logo-white.png')}}"></a>
-                    <p class="font-size-15 mb-35">Hotline: {{  $shared_config['hotline']->value }}</p>
-                    <p class="font-size-15 mb-35">Email: {{  $shared_config['email']->value }}</p>
+                    <p class="font-size-15 mb-10">Hotline: {{  $shared_config['hotline']->value }}</p>
+                    <p class="font-size-15 mb-10">Email: {{  $shared_config['email']->value }}</p>
                     <ul class="nav text-white align-items-center mb-20 nav-gap-md nav-no-opacity">
                         <li class="nav-item"><a class="nav-link" href="{{  $shared_config['facebook']->value }}"><svg xmlns="http://www.w3.org/2000/svg"
                                     width="8" height="17" fill="none">
@@ -76,7 +76,7 @@
                                         d="M8.788 4.097C6.47 4.097 4.6 5.95 4.6 8.25c0 2.298 1.87 4.153 4.188 4.153 2.318 0 4.188-1.855 4.188-4.153 0-2.3-1.87-4.153-4.188-4.153Zm0 6.853c-1.498 0-2.723-1.211-2.723-2.7 0-1.49 1.221-2.7 2.723-2.7 1.502 0 2.723 1.21 2.723 2.7 0 1.489-1.225 2.7-2.723 2.7Zm5.336-7.023a.97.97 0 0 1-.977.968.97.97 0 0 1-.976-.968c0-.535.437-.969.976-.969.54 0 .977.434.977.969Zm2.774.983c-.062-1.298-.36-2.447-1.32-3.394C14.624.569 13.465.272 12.156.207c-1.349-.076-5.39-.076-6.74 0C4.113.27 2.954.565 1.995 1.512 1.035 2.46.74 3.61.674 4.906c-.076 1.338-.076 5.346 0 6.683.063 1.298.361 2.447 1.32 3.394.959.947 2.114 1.244 3.423 1.309 1.348.076 5.39.076 6.739 0 1.308-.062 2.468-.358 3.422-1.309.956-.947 1.254-2.096 1.32-3.394.076-1.337.076-5.342 0-6.68Zm-1.742 8.114a2.745 2.745 0 0 1-1.553 1.54c-1.075.423-3.627.325-4.815.325-1.188 0-3.743.095-4.815-.325a2.746 2.746 0 0 1-1.552-1.54c-.427-1.066-.329-3.596-.329-4.774 0-1.179-.094-3.712.329-4.775a2.745 2.745 0 0 1 1.552-1.54C5.048 1.512 7.6 1.61 8.788 1.61c1.188 0 3.743-.094 4.815.325a2.745 2.745 0 0 1 1.553 1.54c.426 1.066.328 3.596.328 4.775 0 1.178.098 3.712-.328 4.774Z" />
                                 </svg></a></li>
                     </ul>
-                    <p class="font-size-13 text-muted m-0">© 2022 Designed by <a href="https://kalzen.com"
+                    <p class="font-size-13 text-muted m-0">© 2022 Designed by <a class="text-white" href="https://kalzen.com"
                             target="_blank">Kalzen Media</a></p>
                 </div>
                 <div class="col-1 d-none d-lg-block"></div>

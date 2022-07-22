@@ -43061,7 +43061,7 @@ h6 u,
 h1,
 .h1 {
   margin-bottom: 0.8em;
-  font-size: 3.125em;
+  font-size: 2.75em;
   line-height: 1.2;
 }
 @media (max-width: 619.98px) {
@@ -43090,7 +43090,7 @@ h2,
 .h2 {
   margin-bottom: 1em;
   font-size: 2.5em;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 619.98px) {
   h2,

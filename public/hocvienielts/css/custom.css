@@ -197,9 +197,12 @@ blockquote {
   blockquote p {
     display: inline;
   }
-  .blog-detail h1, .blog-detail h2, .blog-detail h3
+  .blog-detail h2
   {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+  }
+  .blog-detail h1{
+    margin-bottom: 20px;
   }
   .blog-detail p
   {

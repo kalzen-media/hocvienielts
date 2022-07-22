@@ -42,13 +42,13 @@
                         href="{{ route('post.category', ['alias' => 'tai-lieu'])}}"><span>Tài liệu</span></a>
                     <div class="dropdown-menu rounded-2 shadow">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="/tin-tuc/ielts-listening">IELTS LISTENING</a>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('post.category', ['alias' => 'ielts-listening])}}">IELTS LISTENING</a>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="/tin-tuc/ielts-reading">IELTS READING</a>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('post.category', ['alias' => 'ielts-reading'])}}">IELTS READING</a>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="/tin-tuc/ielts-speaking">IELTS SPEAKING</a>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('post.category', ['alias' => 'ielts-speaking'])}}">IELTS SPEAKING</a>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="/tin-tuc/ielts-writing">IELTS WRITING</a>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('post.category', ['alias' => 'ielts-writing'])}}">IELTS WRITING</a>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('post.category', ['alias' => 'chia-se-phuong-phap'])}}">Chia sẻ phương
                                     pháp</a></li>

@@ -1,6 +1,12 @@
 @extends('layouts.master')
 @section('meta')
-<title>{{ ($category->name??'Tin tức') . ' - '. env('APP_NAME')}}</title>
+<title>{{$post->title}}</title>
+<meta name="keywords" content="{{collect($post->tags)->pluck('name')->join(',')}}"/>
+<meta name="description" content="{{substr(strip_tags($post->description),0,300)}}"/>
+<meta property="og:image" content="{{$post->images()->first()->url??''}}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{$post->title}}">
+<meta property="og:description" content="{{substr(strip_tags($post->description),0,300)}}">
 @endsection
 @section('content')
     <section class="inner-section single-banner" style="background: url(/frontend/images/single-banner.jpg) no-repeat center;">
