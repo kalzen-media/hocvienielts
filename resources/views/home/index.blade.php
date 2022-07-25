@@ -5,14 +5,14 @@
         <div class="swiper-pagination text-white position-absolute mb-30 start-0 w-100 d-none d-lg-block"></div>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-            @foreach($slides as $slide)
+                @foreach($slides as $slide)
                 <div class="swiper-slide h-auto">
                     <a href="{{$slide->url}}">
                         <img loading="lazy" src="{{ $slide->image}}" data-swiper-parallax-x="20%"
                             alt="{{ $slide->name}}">
                     </a>
                 </div>
-            @endforeach
+                @endforeach
             </div>
         </div>
         <div class="swiper-button-prev swiper-button-position-3 swiper-button-opacity shadow"><svg
@@ -45,8 +45,9 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <h3 class="section-title text-left" data-show="startbox" data-show-delay="100">{{  $shared_config['about_title']->value }}</h3>
-                {!!  $shared_config['about_content']->value !!}
+                <h3 class="section-title text-left" data-show="startbox" data-show-delay="100">
+                    {{  $shared_config['about_title']->value }}</h3>
+                {!! $shared_config['about_content']->value !!}
             </div>
         </div>
     </div>
@@ -95,12 +96,12 @@
                             @foreach ($testimonials as $testimonial)
                             <div class="swiper-slide">
                                 <div class="text-center d-block d-sm-none mb-10"><img class="rounded-circle"
-                                        loading="lazy" src="{{ $testimonial->image }}"
-                                        alt="hocvien" height="150" width="150"> </div>
+                                        loading="lazy" src="{{ $testimonial->image }}" alt="hocvien" height="150"
+                                        width="150"> </div>
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0 d-none d-xl-block me-40"><img class="rounded-circle"
-                                            loading="lazy" src="{{ $testimonial->image }}"
-                                            alt="" height="250" width="250">
+                                            loading="lazy" src="{{ $testimonial->image }}" alt="" height="250"
+                                            width="250">
                                     </div>
                                     <div class="flex-grow-1">
                                         <div class="fw-bold text-primary font-size-18">{{ $testimonial->name }}
@@ -138,68 +139,37 @@
         <h3 class="section-title text-center text-primary">ĐỘI NGŨ CHUYÊN MÔN GIÀU KINH NGHIỆM</h3>
         <div class="row gy-70">
             <!-- Item-->
-            <div class="col-12 col-sm-6 col-lg-3 animated" data-show="startbox"
-                style="transform: translateY(0px); transition-duration: 500ms; opacity: 1;">
-                <!-- Member-->
-                <div class="member "><a class="member-image" href="#" data-img-height=""
-                        style="--img-height: 114%;"><img loading="lazy"
-                            src="{{asset('hocvienielts/images/team/vu.jpg')}}" alt="team"></a>
-                    <div class="member-body"><a class="member-title h4 text-primary" href="#">Mr. Nguyễn Đình Vũ</a>
-                        <div class="member-subtitle font-size-15 text-gray-dark">The definition of insanity is doing the
-                            same thing over and over again and expecting different results.</div>
+            <div class="swiper" data-swiper-slides="4" data-swiper-speed="1000">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        @foreach ($teams as $team)
+                            <!-- Member-->
+                            <div class="member "><a class="member-image" href="#" data-img-height=""
+                                    style="--img-height: 114%;"><img loading="lazy" src="{{$team->image}}"
+                                        alt="{{ $team->name }}"></a>
+                                <div class="member-body"><a class="member-title h4 text-primary"
+                                        href="#">{{ $team->name }}</a>
+                                    <div class="member-subtitle font-size-15 text-gray-dark">{{ $team->description }}
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
-            </div><!-- Item-->
-            <div class="col-12 col-sm-6 col-lg-3 animated" data-show="startbox" data-show-delay="100"
-                style="transform: translateY(0px); transition-duration: 500ms; opacity: 1;">
-                <!-- Member-->
-                <div class="member "><a class="member-image" href="#" data-img-height=""
-                        style="--img-height: 114%;"><img loading="lazy"
-                            src="{{asset('hocvienielts/images/team/lien.JPG')}}" alt="team"></a>
-                    <div class="member-body"><a class="member-title h4 text-primary" href="#">Ms. Phương Liên</a>
-                        <div class="member-subtitle font-size-15 text-gray-dark">We can be truly successful only at
-                            something we're willing to fail at. If we're unwilling to fail, then we're unwilling to
-                            succeed.</div>
-                    </div>
-                </div>
-            </div><!-- Item-->
-            <div class="col-12 col-sm-6 col-lg-3 animated" data-show="startbox" data-show-delay="200"
-                style="transform: translateY(0px); transition-duration: 500ms; opacity: 1;">
-                <!-- Member-->
-                <div class="member "><a class="member-image" href="#" data-img-height=""
-                        style="--img-height: 114%;"><img loading="lazy"
-                            src="{{asset('hocvienielts/images/team/phuong.JPG')}}" alt="team"></a>
-                    <div class="member-body"><a class="member-title h4 text-primary" href="#">Ms. Như Phương</a>
-                        <div class="member-subtitle font-size-15 text-gray-dark">You are what you do, not what you say
-                            you will do. </div>
-                    </div>
-                </div>
-            </div><!-- Item-->
-            <div class="col-12 col-sm-6 col-lg-3 animated" data-show="startbox" data-show-delay="300"
-                style="transform: translateY(0px); transition-duration: 500ms; opacity: 1;">
-                <!-- Member-->
-                <div class="member "><a class="member-image" href="#" data-img-height=""
-                        style="--img-height: 114%;"><img loading="lazy"
-                            src="{{asset('hocvienielts/images/team/van.JPG')}}" alt="team"></a>
-                    <div class="member-body"><a class="member-title h4 text-primary" href="#">Ms. Khánh Vân </a>
-                        <div class="member-subtitle font-size-15 text-gray-dark">See everything through rose-colored
-                            glasses and be happy with the little things in life.</div>
-                    </div>
-                </div>
-            </div><!-- Item-->
+            </div>
         </div>
-    </div>
 </section>
 <section class="course py-60 bg-section-2">
     <div class="container">
         <h3 class="section-title text-center text-primary">CÁC KHÓA HỌC Ở THE IELTS ACADEMY</h3>
         <div class="row">
             <div class="col-md-4">
-                <div class="card bg-dark text-white d-lg-none d-md-block d-xl-none" style="background-image: url({{asset('hocvienielts/images/khoa-1.JPG')}}); height: 300px; background-size:cover;">
+                <div class="card bg-dark text-white d-lg-none d-md-block d-xl-none"
+                    style="background-image: url({{asset('hocvienielts/images/khoa-1.JPG')}}); height: 300px; background-size:cover;">
                     <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
-                            <a id="course-url" href="/tin-tuc/khoa-hoc-forward-ielts" class="btn btn-primary">Xem chi
-                                tiết khóa học</a>
-                        </div>
+                        <a id="course-url" href="/tin-tuc/khoa-hoc-forward-ielts" class="btn btn-primary">Xem chi
+                            tiết khóa học</a>
+                    </div>
                 </div>
                 <div class="course-item rounded-3 p-20 shadow-sm bg-white active"
                     data-image="{{asset('hocvienielts/images/khoa-1.JPG')}}" data-url="/tin-tuc/khoa-hoc-forward-ielts">
@@ -207,11 +177,12 @@
                     <div class="font-size-15">– Khoá học tập trung hoàn thiện 4 kỹ năng Nghe – Nói – Đọc – Viết tiếng
                         Anh học thuật ở cấp độ Sơ cấp – Trung cấp </div>
                 </div>
-                <div class="card bg-dark text-white d-lg-none d-md-block d-xl-none" style="background-image: url({{asset('hocvienielts/video-thumbnail.png')}}); height: 300px; background-size:cover; margin-top: 20px; margin-bottom: -20px;">
+                <div class="card bg-dark text-white d-lg-none d-md-block d-xl-none"
+                    style="background-image: url({{asset('hocvienielts/video-thumbnail.png')}}); height: 300px; background-size:cover; margin-top: 20px; margin-bottom: -20px;">
                     <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
-                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-foudation" class="btn btn-primary">Xem chi
-                                tiết khóa học</a>
-                        </div>
+                        <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-foudation" class="btn btn-primary">Xem chi
+                            tiết khóa học</a>
+                    </div>
                 </div>
                 <div class="course-item rounded-3 p-20 shadow-sm mt-20 bg-white"
                     data-image="{{asset('hocvienielts/video-thumbnail.png')}}"
@@ -220,11 +191,12 @@
                     <div class="font-size-15">Khoá học nền tảng bổ sung các kiến thức tiếng Anh học thuật ở cấp độ cơ
                         bản giúp học viên sẵn sàng học chuyên sâu về IELTS</div>
                 </div>
-                <div class="card bg-dark text-white d-lg-none d-md-block d-xl-none" style="background-image: url({{asset('hocvienielts/images/khoa-2.JPG')}}); height: 300px; background-size:cover; margin-top: 20px; margin-bottom: -20px;">
+                <div class="card bg-dark text-white d-lg-none d-md-block d-xl-none"
+                    style="background-image: url({{asset('hocvienielts/images/khoa-2.JPG')}}); height: 300px; background-size:cover; margin-top: 20px; margin-bottom: -20px;">
                     <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
-                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-advanced" class="btn btn-primary">Xem chi
-                                tiết khóa học</a>
-                        </div>
+                        <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-advanced" class="btn btn-primary">Xem chi
+                            tiết khóa học</a>
+                    </div>
                 </div>
                 <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20"
                     data-image="{{asset('hocvienielts/images/khoa-2.JPG')}}"
@@ -233,11 +205,12 @@
                     <div class="font-size-15">Khoá học chuyên sâu 4 kỹ năng ở mức Cao cấp giúp học viên đạt mục tiêu
                         Overall 7.0+ </div>
                 </div>
-                <div class="card bg-dark text-white d-lg-none d-md-block d-xl-none" style="background-image: url({{asset('hocvienielts/images/khoa-3.JPG')}}); height: 300px; background-size:cover; margin-top: 20px; margin-bottom: -20px;">
+                <div class="card bg-dark text-white d-lg-none d-md-block d-xl-none"
+                    style="background-image: url({{asset('hocvienielts/images/khoa-3.JPG')}}); height: 300px; background-size:cover; margin-top: 20px; margin-bottom: -20px;">
                     <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
-                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-coaching" class="btn btn-primary">Xem chi
-                                tiết khóa học</a>
-                        </div>
+                        <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-coaching" class="btn btn-primary">Xem chi
+                            tiết khóa học</a>
+                    </div>
                 </div>
                 <div class="course-item rounded-3 p-20 shadow-sm bg-white mt-20"
                     data-image="{{asset('hocvienielts/images/khoa-3.JPG')}}"
@@ -253,7 +226,8 @@
                         style="background-image: url({{asset('hocvienielts/images/khoa-1.JPG')}})">
 
                         <div class="card-img-overlay align-bottom bottom-0 text-center" style="top: auto">
-                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-foudation" class="btn btn-primary border-0" style="display:inline-flex">Xem chi
+                            <a id="course-url" href="/tin-tuc/khoa-hoc-ielts-foudation" class="btn btn-primary border-0"
+                                style="display:inline-flex">Xem chi
                                 tiết khóa học</a>
                         </div>
                     </div>
