@@ -46,10 +46,10 @@
                             <a href="{{$post->url}}">{{$post->title}}</a>
                         </h5>
                         <p class="card-text text-muted">{{ $post->description}}</p>
-                        <div class="d-flex justify-content-between text-muted">
+                        <!--<div class="d-flex justify-content-between text-muted">
                             <p>{{ $post->created_at}}</p>
                             <p>{{ $post->viewed}} lượt xem</p>
-                        </div>
+                        </div>-->
                     </div>
                 </article>
                 @endif
