@@ -139,10 +139,9 @@
         <h3 class="section-title text-center text-primary">ĐỘI NGŨ CHUYÊN MÔN GIÀU KINH NGHIỆM</h3>
         <div class="row gy-70">
             <!-- Item-->
-            <div class="swiper" data-swiper-slides="4" data-swiper-speed="1000">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
                         @foreach ($teams as $team)
+                        <div class="col-12 col-sm-6 col-lg-3 animated" data-show="startbox"
+                            style="transform: translateY(0px); transition-duration: 500ms; opacity: 1;">
                             <!-- Member-->
                             <div class="member "><a class="member-image" href="#" data-img-height=""
                                     style="--img-height: 114%;"><img loading="lazy" src="{{$team->image}}"
@@ -153,9 +152,8 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         @endforeach
-                    </div>
-                </div>
             </div>
         </div>
 </section>
