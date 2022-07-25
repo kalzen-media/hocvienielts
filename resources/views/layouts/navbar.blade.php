@@ -112,16 +112,16 @@
                             aria-controls="navbarCollapsePortfolio"><span>Tài liệu</span></a>
                         <div class="navbar-collapse-menu collapse" id="navbarCollapsePages1">
                             <ul class="nav navbar-nav">
-                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/ielts-listening">IELTS
-                                        LISTENING</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/ielts-reading">IELTS READING</a>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/ielts-speaking">IELTS
-                                        SPEAKING</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/ielts-writing">IELTS WRITING</a>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="/tin-tuc/chia-se-phuong-phap">Chia sẻ
-                                        phương pháp</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('post.category', ['alias' => 'ielts-listening'])}}">IELTS LISTENING</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('post.category', ['alias' => 'ielts-reading'])}}">IELTS READING</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('post.category', ['alias' => 'ielts-speaking'])}}">IELTS SPEAKING</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('post.category', ['alias' => 'ielts-writing'])}}">IELTS WRITING</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('post.category', ['alias' => 'chia-se-phuong-phap'])}}">Chia sẻ phương
+                                    pháp</a></li>
                             </ul>
                         </div>
                     </li>
