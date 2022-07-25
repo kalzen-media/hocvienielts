@@ -109,6 +109,14 @@
                     </ul>
                 </li>
                 <li class="nav-item">
+                    <a href="{{route('admin.team.index')}}" class="nav-link">
+                        <i class="icon-users2"></i>
+                        <span>
+                            Đội ngũ
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="{{route('admin.message.index')}}" class="nav-link">
                         <i class="icon-mailbox"></i>
                         <span>

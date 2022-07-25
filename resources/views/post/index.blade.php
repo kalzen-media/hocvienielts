@@ -23,6 +23,7 @@
     <div class="container">
         <div class="row">
             <!-- breadcums -->
+            @if (isset($category))
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{{ route('home') }}">Trang chủ</a></li>
@@ -32,6 +33,7 @@
                     <li class="breadcrumb-item active" aria-current="page">{{$category->name}}</li>
                 </ol>
             </nav>
+            @endif
             <div class="col-lg-8">
                 @foreach ($posts as $post)
                 @if($loop->index == 0)
