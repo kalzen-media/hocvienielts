@@ -144,7 +144,7 @@
                             style="transform: translateY(0px); transition-duration: 500ms; opacity: 1;">
                             <!-- Member-->
                             <div class="member "><a class="member-image" href="#" data-img-height=""
-                                    style="--img-height: 114%;"><img loading="lazy" src="{{$team->image}}"
+                                    style="--img-height: 114%;"><img class="w-100" loading="lazy" src="{{$team->image}}"
                                         alt="{{ $team->name }}"></a>
                                 <div class="member-body"><a class="member-title h4 text-primary"
                                         href="#">{{ $team->name }}</a>
