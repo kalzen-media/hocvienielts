@@ -174,7 +174,7 @@
       <!-- Your Plugin chat code -->
       <div class="fb-customerchat"
         attribution="page_inbox"
-        page_id="129367490945559">
+        page_id="1233393136770410">
       </div>
 </body>
 
