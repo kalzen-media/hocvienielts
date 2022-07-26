@@ -12,7 +12,7 @@
 */
 header('Access-Control-Allow-Origin: *'); 
 header('Access-Control-Allow-Methods: *'); 
-header('Access-Control-Allow-Headers: Origin, X-Requested-With,Authorization, Content-Type, Accept');
+header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, x-client-key, x-client-token, x-client-secret, Authorization');
 $app = new Illuminate\Foundation\Application(
     $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
 );
