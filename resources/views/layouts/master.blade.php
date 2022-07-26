@@ -105,11 +105,7 @@
                         </div>
                         <div class="col-6 col-md-5">
                             <h6 class="display-6 text-white mb-20">Fanpage</h6>
-                            <iframe
-                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftheieltsacademy.edu&tabs=timeline&width=0&height=0&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=372100597106969"
-                                width="500" height="250" style="border:none;overflow:hidden" scrolling="no"
-                                frameborder="0" allowfullscreen="true"
-                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            <div class="fb-page" data-href="https://www.facebook.com/theieltsacademy.edu" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
                         </div>
                     </div>
                 </div>
@@ -153,8 +149,9 @@
     @endif
 
  <!-- Messenger Plugin chat Code -->
- <div id="fb-root"></div>
 
+ <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0&appId=372100597106969&autoLogAppEvents=1" nonce="NxfHMarD"></script>
  <!-- Your Plugin chat code -->
  <div id="fb-customer-chat" class="fb-customerchat">
  </div>
