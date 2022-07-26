@@ -105,7 +105,7 @@
                         </div>
                         <div class="col-6 col-md-5">
                             <h6 class="display-6 text-white mb-20">Fanpage</h6>
-                            <div class="fb-page" data-href="https://www.facebook.com/theieltsacademy.edu" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/theieltsacademy.edu" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/theieltsacademy.edu">The IELTS Academy</a></blockquote></div>
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftheieltsacademy.edu&tabs=timeline&width=340&height=331&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=372100597106969" width="340" height="331" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                         </div>
                     </div>
                 </div>
