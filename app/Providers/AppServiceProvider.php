@@ -40,7 +40,7 @@ class AppServiceProvider extends ServiceProvider
             View::share('shared_catalogues', Catalogue::orderBy('id','asc')->get());
             
         });
-        View::composer(['contact.index','partials.*', 'layouts.*', 'home.*'], function ($view) {
+        View::composer(['contact.index','partials.*', 'layouts.*', 'home.*', 'contact.advise'], function ($view) {
             View::share('shared_config', Config::all()->keyBy('name'));
             
         });
