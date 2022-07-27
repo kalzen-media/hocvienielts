@@ -13,7 +13,7 @@
     <div class="pt-190 pb-130 bg-contact" style="background-image: url({{ asset('hocvienielts/bg-contact.jpg') }})">
         <!-- Shape-->
         <div class="container">
-            <h1 class="m-0 text-center mb-100" data-show="startbox">{{  $shared_config['contact_title']->value }}</h1>
+            <h1 class="m-0 text-center mb-100" data-show="startbox">THÔNG TIN LIÊN HỆ</h1>
             <div class="row gy-30">
                 <div class="col-12 col-lg-4">
                     <!-- Item-->
