@@ -33,7 +33,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png">
 
-    <title>Học viện Ielts</title>
+    @yield('meta')
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap">
     <!-- Style-->
@@ -147,7 +147,7 @@
     };
     </script>
     @endif
-  <!-- Load Facebook SDK for JavaScript -->
+<!-- Load Facebook SDK for JavaScript -->
 <!-- Messenger Plugin chat Code -->
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0&appId=372100597106969&autoLogAppEvents=1" nonce="sVmK5eUb"></script>

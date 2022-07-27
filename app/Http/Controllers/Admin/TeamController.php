@@ -45,7 +45,7 @@ class TeamController extends Controller
         return view('admin.team.form',compact('record'));
     }
     
-    public function update(SubmitSlideRequest $request, $id)
+    public function update(Request $request, $id)
     {
         DB::beginTransaction();
         try {
