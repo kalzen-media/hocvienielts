@@ -150,7 +150,7 @@
         <div class="row gy-70">
             <!-- Item-->
             <div class="swiper mt-90" data-swiper-slides="1" data-swiper-breakpoints="828:2, 1024:3, 1200:4"
-                data-swiper-gap="65" data-swiper-grabcursor="true" data-show="startbox" data-show-delay="200">
+                data-swiper-gap="30" data-swiper-grabcursor="true" data-show="startbox" data-show-delay="200">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         @foreach ($teams as $team)
