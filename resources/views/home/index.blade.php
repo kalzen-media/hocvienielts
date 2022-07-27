@@ -1,11 +1,13 @@
 @extends('layouts.master')
 @section('meta')
 <title>Học viện IELTS</title>
-<meta name="description" content="The IELTS Academy – trung tâm luyện thi IELTS uy tín hàng đầu tại Việt Nam có hơn 7 năm kinh nghiệm trong nghiên cứu và giảng dạy IELTS. Với sứ mệnh định hình IELTS TƯ DUY 4 CHIỀU cho người học, The IELTS Academy nỗ lực cống hiến sức trẻ, nhiệt huyết giúp các bạn học IELTS tiếp cận phương pháp giảng dạy mới nhất, hiệu quả nhất, chinh phục mọi mục tiêu IELTS dễ dàng."/>
+<meta name="description"
+    content="The IELTS Academy – trung tâm luyện thi IELTS uy tín hàng đầu tại Việt Nam có hơn 7 năm kinh nghiệm trong nghiên cứu và giảng dạy IELTS. Với sứ mệnh định hình IELTS TƯ DUY 4 CHIỀU cho người học, The IELTS Academy nỗ lực cống hiến sức trẻ, nhiệt huyết giúp các bạn học IELTS tiếp cận phương pháp giảng dạy mới nhất, hiệu quả nhất, chinh phục mọi mục tiêu IELTS dễ dàng." />
 <meta property="og:image" content="{{asset('hocvienielts/video-thumbnail.png')}}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Học viện IELTS">
-<meta property="og:description" content="{{substr('The IELTS Academy – trung tâm luyện thi IELTS uy tín hàng đầu tại Việt Nam có hơn 7 năm kinh nghiệm trong nghiên cứu và giảng dạy IELTS. Với sứ mệnh định hình IELTS TƯ DUY 4 CHIỀU cho người học, The IELTS Academy nỗ lực cống hiến sức trẻ, nhiệt huyết giúp các bạn học IELTS tiếp cận phương pháp giảng dạy mới nhất, hiệu quả nhất, chinh phục mọi mục tiêu IELTS dễ dàng.',0,300)}}">
+<meta property="og:description"
+    content="{{substr('The IELTS Academy – trung tâm luyện thi IELTS uy tín hàng đầu tại Việt Nam có hơn 7 năm kinh nghiệm trong nghiên cứu và giảng dạy IELTS. Với sứ mệnh định hình IELTS TƯ DUY 4 CHIỀU cho người học, The IELTS Academy nỗ lực cống hiến sức trẻ, nhiệt huyết giúp các bạn học IELTS tiếp cận phương pháp giảng dạy mới nhất, hiệu quả nhất, chinh phục mọi mục tiêu IELTS dễ dàng.',0,300)}}">
 @stop
 @section('content')
 <section class="slider-home position-relative">
@@ -147,23 +149,33 @@
         <h3 class="section-title text-center text-primary">ĐỘI NGŨ CHUYÊN MÔN GIÀU KINH NGHIỆM</h3>
         <div class="row gy-70">
             <!-- Item-->
-                        @foreach ($teams as $team)
-                        <div class="col-12 col-sm-6 col-lg-3 animated" data-show="startbox"
-                            style="transform: translateY(0px); transition-duration: 500ms; opacity: 1;">
-                            <!-- Member-->
-                            <div class="member "><a class="member-image" href="#" data-img-height=""
-                                    style="--img-height: 114%;"><img class="w-100" style="width: 100vw;" loading="lazy" src="{{$team->image}}"
-                                        alt="{{ $team->name }}"></a>
-                                <div class="member-body"><a class="member-title h4 text-primary"
-                                        href="#">{{ $team->name }}</a>
-                                    <div class="member-subtitle font-size-15 text-gray-dark">{{ $team->description }}
+            <div class="swiper mt-90" data-swiper-slides="1" data-swiper-breakpoints="828:2, 1024:3"
+                data-swiper-gap="65" data-swiper-grabcursor="true" data-show="startbox" data-show-delay="200">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            @foreach ($teams as $team)
+                            <div class=" animated" data-show="startbox"
+                                style="transform: translateY(0px); transition-duration: 500ms; opacity: 1;">
+                                <!-- Member-->
+                                <div class="member "><a class="member-image" href="#" data-img-height=""
+                                        style="--img-height: 114%;"><img class="w-100" style="width: 100vw;"
+                                            loading="lazy" src="{{$team->image}}" alt="{{ $team->name }}"></a>
+                                    <div class="member-body"><a class="member-title h4 text-primary"
+                                            href="#">{{ $team->name }}</a>
+                                        <div class="member-subtitle font-size-15 text-gray-dark">
+                                            {{ $team->description }}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            @endforeach
                         </div>
-                        @endforeach
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 </section>
 <section class="course py-60 bg-section-2">
     <div class="container">
