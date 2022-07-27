@@ -155,17 +155,13 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             @foreach ($teams as $team)
-                            <div class=" animated" data-show="startbox"
-                                style="transform: translateY(0px); transition-duration: 500ms; opacity: 1;">
-                                <!-- Member-->
-                                <div class="member "><a class="member-image" href="#" data-img-height=""
-                                        style="--img-height: 114%;"><img class="w-100" style="width: 100vw;"
-                                            loading="lazy" src="{{$team->image}}" alt="{{ $team->name }}"></a>
-                                    <div class="member-body"><a class="member-title h4 text-primary"
-                                            href="#">{{ $team->name }}</a>
-                                        <div class="member-subtitle font-size-15 text-gray-dark">
-                                            {{ $team->description }}
-                                        </div>
+                            <div class="member "><a class="member-image" href="#" data-img-height=""
+                                    style="--img-height: 114%;"><img class="w-100" style="width: 100vw;" loading="lazy"
+                                        src="{{$team->image}}" alt="{{ $team->name }}"></a>
+                                <div class="member-body"><a class="member-title h4 text-primary"
+                                        href="#">{{ $team->name }}</a>
+                                    <div class="member-subtitle font-size-15 text-gray-dark">
+                                        {{ $team->description }}
                                     </div>
                                 </div>
                             </div>
