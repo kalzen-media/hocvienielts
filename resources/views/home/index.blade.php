@@ -153,8 +153,8 @@
                 data-swiper-gap="65" data-swiper-grabcursor="true" data-show="startbox" data-show-delay="200">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
+                        @foreach ($teams as $team)
                         <div class="swiper-slide">
-                            @foreach ($teams as $team)
                             <div class="member "><a class="member-image" href="#" data-img-height=""
                                     style="--img-height: 114%;"><img class="w-100" style="width: 100vw;" loading="lazy"
                                         src="{{$team->image}}" alt="{{ $team->name }}"></a>
@@ -165,8 +165,8 @@
                                     </div>
                                 </div>
                             </div>
-                            @endforeach
                         </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
