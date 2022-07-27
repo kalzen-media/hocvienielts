@@ -149,7 +149,7 @@
         <h3 class="section-title text-center text-primary">ĐỘI NGŨ CHUYÊN MÔN GIÀU KINH NGHIỆM</h3>
         <div class="row gy-70">
             <!-- Item-->
-            <div class="swiper mt-90" data-swiper-slides="1" data-swiper-breakpoints="828:2, 1024:3"
+            <div class="swiper mt-90" data-swiper-slides="1" data-swiper-breakpoints="828:2, 1024:3, 1200:4"
                 data-swiper-gap="65" data-swiper-grabcursor="true" data-show="startbox" data-show-delay="200">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -169,6 +169,14 @@
                         @endforeach
                     </div>
                 </div>
+                <div class="d-flex mt-70 justify-content-center">
+                                <div class="swiper-button-prev swiper-button-position-2 swiper-button-gray shadow"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
+                                        <path fill="currentColor" fill-rule="evenodd" d="m3.96 6.15 5.08-4.515L7.91.365.445 7l7.465 6.635 1.13-1.27L3.96 7.85h15.765v-1.7H3.96Z" clip-rule="evenodd" />
+                                    </svg></div>
+                                <div class="swiper-button-next swiper-button-position-2 swiper-button-gray shadow"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
+                                        <path fill="currentColor" fill-rule="evenodd" d="m16.21 6.15-5.08-4.515 1.13-1.27L19.725 7l-7.465 6.635-1.13-1.27 5.08-4.515H.445v-1.7H16.21Z" clip-rule="evenodd" />
+                                    </svg></div>
+                            </div>
             </div>
         </div>
     </div>
