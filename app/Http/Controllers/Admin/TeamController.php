@@ -50,7 +50,7 @@ class TeamController extends Controller
         DB::beginTransaction();
         try {
             $team = Team::find($id);
-            $team->update($request->only(['name','url','image','ordering']));
+            $team->update($request->only(['name','image','description']));
             DB::commit();
             return redirect()->route('admin.team.index')->with('message', 'Cập nhật thành công');
         }catch(Exception $ex) {
