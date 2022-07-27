@@ -1,10 +1,10 @@
 @extends('layouts.master')
 @section('meta')
-<title>Học viện Ielts</title>
+<title>Học viện IELTS</title>
 <meta name="description" content="The IELTS Academy – trung tâm luyện thi IELTS uy tín hàng đầu tại Việt Nam có hơn 7 năm kinh nghiệm trong nghiên cứu và giảng dạy IELTS. Với sứ mệnh định hình IELTS TƯ DUY 4 CHIỀU cho người học, The IELTS Academy nỗ lực cống hiến sức trẻ, nhiệt huyết giúp các bạn học IELTS tiếp cận phương pháp giảng dạy mới nhất, hiệu quả nhất, chinh phục mọi mục tiêu IELTS dễ dàng."/>
 <meta property="og:image" content="{{asset('hocvienielts/video-thumbnail.png')}}">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Học viện Ielts">
+<meta property="og:title" content="Học viện IELTS">
 <meta property="og:description" content="{{substr('The IELTS Academy – trung tâm luyện thi IELTS uy tín hàng đầu tại Việt Nam có hơn 7 năm kinh nghiệm trong nghiên cứu và giảng dạy IELTS. Với sứ mệnh định hình IELTS TƯ DUY 4 CHIỀU cho người học, The IELTS Academy nỗ lực cống hiến sức trẻ, nhiệt huyết giúp các bạn học IELTS tiếp cận phương pháp giảng dạy mới nhất, hiệu quả nhất, chinh phục mọi mục tiêu IELTS dễ dàng.',0,300)}}">
 @stop
 @section('content')
