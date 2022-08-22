@@ -18,7 +18,7 @@ class NewsController extends Controller
     {
         $related = Post::inRandomOrder()->paginate(5);
         $category = Category::where('slug', $alias)->firstOrFail();
-        $news = $category->posts()->paginate();
+        $news = $category->posts()->orderBy('id', 'desc')->paginate();
         return view('news.index', ['category'=>$category,'news' => $news, 'related' => $related]);
     }
     public function detail($alias, Request $request)

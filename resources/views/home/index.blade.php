@@ -207,7 +207,7 @@
                     </div>
                 </div>
                 <div class="course-item rounded-3 p-20 shadow-sm mt-20 bg-white"
-                    data-image="{{asset('hocvienielts/video-thumbnail.png')}}"
+                    data-image="{{asset('hocvienielts/video-thumbnail.png')}}" 
                     data-url="/tin-tuc/khoa-hoc-ielts-foudation">
                     <h6 class="text-primary">IELTS FOUNDATION</h6>
                     <div class="font-size-15">Khoá học nền tảng bổ sung các kiến thức tiếng Anh học thuật ở cấp độ cơ
